@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" />
+
+
+</head>
+
+<body class="app-body">
+    <div class="wrapper">
+
+        <div class="content-page">
+            <!-- header -->
+             <header class="header header-fixed navbar-custom">
+                <div class="container-fluid">
+                    <div class="header-top">
+                        <div class="header-school-logo">
+                            <span class="school-logo"><img src="images/forsyth-default-logo.png" alt=""></span>
+                            <span class="school-name">Forsyth County Schools</span>
+                        </div>
+
+                        <ul class="list-unstyled topnav-menu  mb-0 ml-auto">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-bell" href="#" id="dropdownbellnotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">4</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right bell-dropdown" aria-labelledby="dropdownbellnotification">
+                                    <!-- item-->
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Notifications </h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 1 fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                              <div class="dropdown-divider"></div>
+                                              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 2 gfgfg fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user p-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Teacher:</span>
+                                    <img src="images/user-1.jpg" alt="user-image" class="rounded-circle">
+                                     
+                                    <span class="pro-user-name ml-1">
+
+                                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <!-- item-->
+                                  
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand Learnyve-logo" href="#">
+                            <img src="images/Learnyve_logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Classes </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Students</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tests
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">My Questions</a>
+                                        <a class="dropdown-item" href="#">My Question Categories</a>
+                                        <a class="dropdown-item" href="#">Standard Assessment</a>
+                                        <a class="dropdown-item" href="#">My Assessments</a>
+                                        <a class="dropdown-item" href="#">Score</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Assignments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Badges</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Records</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">External Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Collaborate</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Badges</a>
+                                </li>
+
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+
+            </header>
+            <!-- header end -->
+           <!--  view student modal start -->
+             <div class="modal fade" id="view" tabindex="-1" aria-labelledby="CreateTestLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="CreateTestLabel">Student Details</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        
+                                      <div class="col-12 row">
+                                          <div class="col-md-4"><img src="http://18.191.9.147/eduapp/public/files/students/dgcjgb014874e0i41aai.webp" class="rounded-top" onerror="this.onerror=null;this.src='http://18.191.9.147/eduapp/public/files/students/profile-head.png';" width="80% " height="100%"></div>
+                                            <div class="col-8 border-left">
+                <div class="form-group row">
+                 <label class=" col-md-4  col-form-label  " for="hf-email"> NAME :</label>
+                  <label class=" col-md-8  col-form-label  "> Mr . Shubhmann Gill</label>
+           <label class="col-md-4 col-form-label  " for="hf-email"> STUDENT ID :</label>
+                  <label class="col-md-8 col-form-label  "> 136L1A0401</label>
+                  <label class="col-md-4 col-form-label  " for="hf-email"> CONTACT MAIL :</label>
+                  <label class="col-md-8 col-form-label  "> student1@elearnyve.com</label>
+           <label class="col-md-4 col-form-label  " for="hf-email"> CONTACT PHONE:</label>
+                  <label class="col-md-8 col-form-label  "> 8838808811</label>
+                  <label class="col-md-4 col-form-label  " for="hf-email">ADDRESS :</label>
+<label class="col-md-8 col-form-label  "> Alabama Lane 8</label>
+<label class="col-md-4 col-form-label  " for="hf-email"> DATE ENROLLED :</label>
+<label class="col-md-8 col-form-label  "> 2020-12-28</label>
+            </div>
+        
+
+                                            </div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-primary " data-dismiss="modal">close</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <!--  modal end -->
+                     <!--  add student modal start -->
+             <div class="modal fade" id="add" tabindex="-1" aria-labelledby="CreateTestLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="CreateTestLabel">Add Students</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                                </div>
+                                <div class="modal-body">
+                                     <div class="table-responsive-lg">
+                                <table id="student-table" class="table  table-hover">
+                                    <thead class="bg-default">
+                                        <tr>
+                                        <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Id</th>
+                                            <th >
+                                                <div class="form-check form-check-inline">
+                                                 <!--  <label class="form-check-label" for="inlineCheckbox1">Select All</label> -->
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="option1">
+                                                  
+                                                </div>
+                                            </th>
+                                            
+                                          
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                     <tr>
+                                     <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td >
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    
+                                                </div>
+                                            </td>
+                                            
+                                           
+                                            
+                                        </tr>
+                                        
+                                      
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary " data-dismiss="modal">Add</button>
+                                     <button type="button" class="btn btn-outline-primary " data-dismiss="modal">Cancel</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <!--  modal end -->
+                   <div class="page-top text-dark" style="background:#f5fcea;">
+            <div class="container-fluid">
+                <div class="row p-2">
+                <!-- <div class="col-md-1"><a type="button" id="sidebarCollapse">
+                            <i class="fe-menu" aria-hidden="true"></i>
+
+                        </a></div> -->
+                    <div class="col-md-6 text-left">
+                      <div class="row">
+                <!-- <i class="fas fa-bell mr-2 myfa"> <span class="badge badge-primary text-light "  style="position: absolute;font-size: 7px;">7</span></i> --> 
+                <span class="mr-5"><a type="button" id="sidebarCollapse">
+                            <i class="fe-menu fa-lg" aria-hidden="true"></i>
+
+                        </a></span> 
+                <span> <b>Class :</b> PHYSICS / Fiber Optics class</span>
+                <div class="dropdown dropdown">  <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;  <i class="fe-refresh-ccw " aria-hidden="true"> </i>  </a>  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">  <li class="dropdown-item"> Course 1</li>  <li class="dropdown-item">Course 2</li>  <li class="dropdown-item">Course 3</li>  </ul>  </div>
+                     </div>
+
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <b>  Course:</b> frth <!--<i class="fas fa-envelope mx-2"></i><i class="fas fa-comment-dots mx-1"></i>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="main">
+                <!-- sidebar -->
+                <div id="sidebar" class="left-side-menu sidebar-fixed">
+
+                    <div id="sidebar-menu" class="active">
+                        
+
+                        <ul class="metismenu " id="side-menu">
+                            <li class="">
+                                <a href="student.html" class="active" aria-expanded="false">
+                                   <i class="fas fa-users"></i>
+                                    <span> Class Roster </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attendance.html" aria-expanded="false">
+                                   <i class="far fa-calendar-alt "></i>
+                                    <span> Attendance </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="tests.html" aria-expanded="false">
+                                    <i class="fas fa-file-signature"></i>
+                                    <span> Tests </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" aria-expanded="false">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span> Assignment </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" aria-expanded="false">
+                                    <i class="fas fa-window-restore"></i>
+                                    <span>Gradebook  </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" aria-expanded="false">
+                                   <i class="fa fa-chart-bar"></i>
+                                    <span> Records & Reports </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" aria-expanded="false">
+                                 <i class="fas fa-file-download" ></i>
+                                    <span> Resources & Docs </span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- sidebar end -->
+                
+                
+                <div class="content inner-page">
+                   
+                    
+                    <!-- szad -->
+                    <div class="card mt-4">
+                     
+                         <div class="card-header d-flex">
+                            <div class="feed-header-title">
+                                <h5 class="text-primary">Class Roster<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+
+                            </div>
+                         
+ <div class="ml-auto" data-toggle="tooltip" data-placement="top" title=" Add Student ">
+
+
+                                <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#add"><i class="fas fa-plus" aria-hidden="true" ></i>  ADD STUDENT</button>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4 justify-content-between">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">PDF Download <i class="fas fa-download"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Excel Download <i class="fas fa-download"></i></button>
+                                </div>
+                                <!-- <div class="col-auto">
+                                    <input class="form-control" type="text" placeholder="Search">
+                                </div> -->
+                            </div>
+                            <div class="table-responsive-lg">
+                                <table id="student-table" class="table table-striped table-hover">
+                                    <thead class="bg-default">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="option1">
+                                                    <!-- <label class="form-check-label" for="inlineCheckbox1">All</label> -->
+                                                </div>
+                                            </th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Id</th>
+                                            <th>Email</th>
+                                            <th>Attendance</th>
+                                            <th class="text-nowrap text-right">Account Access </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                     <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>100 %</td>
+                                            <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>99%</td>
+                                            <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success" data-toggle="modal" data-target="#view"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>99%</td>
+                                            <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success" data-toggle="modal" data-target="#view"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>99%</td>
+                                            <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success" data-toggle="modal" data-target="#view"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Pranav </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>99%</td>
+                                            <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success" data-toggle="modal" data-target="#view"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <div class="image_container">
+                                                           <!--  <span class="user-status offline"></span> -->
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>Kumar </td>
+                                            <td>Sinthoju</td>
+                                            <td>12345</td>
+                                            <td>psinthoju@gmail.com </td>
+                                            <td>100 %</td>
+                                             <td class="text-nowrap text-right">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table end -->
+
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div id="overlay"></div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/bootstrap.bundle.min.js'></script>
+        <script src="js/popper.min.js"></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/app.js'></script>
+
+
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+        <script src='js/script.js'></script>
+
+        <script>
+        </script>
+</body>
+
+</html>

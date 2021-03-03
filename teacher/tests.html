@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" />
+
+
+</head>
+
+<body class="app-body">
+    <div class="wrapper">
+
+        <div class="content-page">
+            <!-- header -->
+            <header class="header header-fixed navbar-custom">
+                <div class="container-fluid">
+                    <div class="header-top">
+                        <div class="header-school-logo">
+                            <span class="school-logo"><img src="images/forsyth-default-logo.png" alt=""></span>
+                            <span class="school-name">Forsyth County Schools</span>
+                        </div>
+
+                        <ul class="list-unstyled topnav-menu float-right mb-0 ml-auto">
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user p-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/user-1.jpg" alt="user-image" class="rounded-circle">
+                                    <span class="pro-user-name ml-1">
+                                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <!-- item-->
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Welcome !</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-settings"></i>
+                                        <span>Settings</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-lock"></i>
+                                        <span>Lock Screen</span>
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand Learnyve-logo" href="#">
+                            <img src="images/Learnyve_logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="class.html">Classes </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Students</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Assessment Library
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">My Questions</a>
+                                        <a class="dropdown-item" href="#">My Question Categories</a>
+                                        <a class="dropdown-item" href="#">Standard Assessment</a>
+                                        <a class="dropdown-item" href="#">My Assessments</a>
+                                        <a class="dropdown-item" href="#">Score</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Assignments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Badges</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Records</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Storage& Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Collaborate</a>
+                                </li>
+
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+
+            </header>
+            <!-- header end -->
+            <div class="main">
+                <!-- sidebar -->
+                <div id="sidebar" class="left-side-menu sidebar-fixed">
+
+                    <div id="sidebar-menu" class="active">
+                        <!-- <a type="button" id="sidebarCollapse">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+
+                        </a> -->
+
+                        <ul class="metismenu " id="side-menu">
+                            <li class="">
+                                <a href="student.html" aria-expanded="false">
+                                    <i class="fas fa-file-video"></i>
+                                    <span> Class Roster </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attendance.html" aria-expanded="false">
+                                    <i class="fas fa-school"></i>
+                                    <span> Attendance </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tests.html" class="active" aria-expanded="false">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span> Tests </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" aria-expanded="false">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span> Assignment </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" aria-expanded="false">
+                                    <i class="fas fa-window-restore"></i>
+                                    <span>Gradebook  </span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" aria-expanded="false">
+                                    <i class="fas fa-book-open"></i>
+                                    <span> Records & Reports </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" aria-expanded="false">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span> Resources & Docs </span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- sidebar end -->
+                <div class="content">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h4 class="card-title mb-0">Tests </h4>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#CreateTest"><i class="fas fa-plus" aria-hidden="true"></i>   Add Test to Class</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+
+                            <div class="table-responsive-lg">
+                                <table id="student-table" class="table  table-hover">
+                                    <thead class="bg-default">
+                                        <tr>
+                                            <th>Test Title</th>
+                                            <th>Active Flag</th>
+                                            <th>Due Date</th>
+                                            <th>#Taken</th>
+                                            <th>#Question</th>
+                                            <th>Time Duration</th>
+                                            <th>Edit - View - Delete</th>
+                                            <th>Settings</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sample 11/27</td>
+                                            <td>
+                                                <label class="c-switch c-switch-label c-switch-outline-primary">
+                                                    <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                                                    </label>
+                                            </td>
+                                            <td>Nov 30, 2020</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>10 min</td>
+                                            <td>
+                                                <span class="p-2"><a href="#"><i class="fas fa-comment-dots"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="far fa-user-circle"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
+                                            </td>
+                                            <td><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sample 11/27</td>
+                                            <td>
+                                                <label class="c-switch c-switch-label c-switch-outline-primary">
+                                                    <input class="c-switch-input" type="checkbox" ><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                                                    </label>
+                                            </td>
+                                            <td>Nov 30, 2020</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>10 min</td>
+                                            <td>
+                                                <span class="p-2"><a href="#"><i class="fas fa-comment-dots"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="far fa-user-circle"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
+                                            </td>
+                                            <td><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- table end -->
+                    <!-- Test Settings model -->
+
+                    <div class="modal fade" id="TestSettings" tabindex="-1" aria-labelledby="TestSettingsModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="TestSettingsModal">Test Settings</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="col-md-8">
+                                                Allow Students To view Question Feedback:
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback1" name="Feedback" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback2" name="Feedback" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-3">
+                                            <div class="col-md-8">
+                                                Allow Students To view Solution:
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Test Settings model end -->
+
+
+                    <!--  Add Test to Class model -->
+                    <div class="modal fade" id="CreateTest" tabindex="-1" aria-labelledby="CreateTestLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="CreateTestLabel">Create Test</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div>
+                                            <strong>Choose Assessment From Library:</strong>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">Choose From Standard Assessment</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">Choose From My Assessment</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Test to Class model end -->
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div id="overlay"></div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/bootstrap.bundle.min.js'></script>
+        <script src="js/popper.min.js"></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/app.js'></script>
+
+
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+        <script src='js/script.js'></script>
+
+        <script>
+        </script>
+</body>
+
+</html>
