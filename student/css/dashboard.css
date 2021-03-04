@@ -29,7 +29,7 @@ h6 {
 }
 
 .content {
-    padding: 30px 30px;
+    padding: 20px 30px;
 }
 
 .container-fluid {
@@ -1955,7 +1955,7 @@ label {
   /*  background-color: #f5fcea;*/ 
 }
 .report-card-border {
-    border: 2px solid #fd804a;
+    border: 0.1px solid #fd804a;
    
 }
 .report-card-img {
@@ -1972,4 +1972,92 @@ label {
     height: auto;
     justify-content: center;
 }
+}
+.student-card{
+    border-top: 4px solid #fd804a;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+
+.student-card1{
+    border-top: 4px solid #8ec63f;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.student-card3{
+    border-top: 4px solid #7f7f84;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.performance-card1{
+      background-image: url('../images/Curriculumn_and_Resource_Library_icon.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+    border-top: 3px solid #fd804a;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.performance-card2{
+      background-image: url('../images/Test_Assignment_and_evaluation_icon.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+    border-top: 3px solid #fd804a;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.performance-card3{
+      background-image: url('../images/Records_and_Reports_icon.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+    border-top: 3px solid #fd804a;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.performance-card4{
+      background-image: url('../images/Security_Usability_and_Availability_Icon.png');
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+    border-top: 3px solid #fd804a;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.exam-card{
+    background-color: #f5fcea;
+}
+.exam-password {
+    padding: 15px;
+    background-color: #f5fcea;
+    border-left: 2px solid #fd804a;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.evaluation-card{
+    border-top: 2px solid #8ec63f;
+   margin-bottom: 10px;
+    -webkit-box-shadow: 0 9px 16px 1px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+           /* box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);*/
+}
+.exam-space{
+    padding: 80px 80px;
 }
