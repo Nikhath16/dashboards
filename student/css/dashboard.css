@@ -1690,6 +1690,7 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }
 a:hover {
     color: #fd804a;
+    text-decoration:none;
 }
 a {
     color: #fd804a;
@@ -1699,7 +1700,7 @@ a {
 label {
     display: inline-block;
     margin-bottom: .5rem;
-    margin-top: .2rem;
+    margin-top: 0rem;
 }
 .page-top {
     position: sticky;
@@ -2052,7 +2053,7 @@ label {
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
 }
 .evaluation-card{
-    border-top: 2px solid #8ec63f;
+    border-top: 2px solid #fd804a;
    margin-bottom: 10px;
     -webkit-box-shadow: 0 9px 16px 1px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
@@ -2064,3 +2065,6 @@ label {
 .answer{
    padding: 150px 150px;
 }
+  .a { 
+            text-decoration: none; 
+        } 
