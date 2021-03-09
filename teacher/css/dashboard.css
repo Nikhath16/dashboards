@@ -1602,4 +1602,8 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
- 
+ .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fd804a;
+}
