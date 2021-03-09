@@ -14,52 +14,39 @@
 </script> -->
        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       
-        <script>
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-type: 'bar',
-data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-    }]
-},
-options: {
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    },
-onClick:function(e){
-    var activePoints = myChart.getElementsAtEvent(e);
-    var selectedIndex = activePoints[0]._index;
-    alert(this.data.datasets[0].data[selectedIndex]);
+               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+   <!--dsdjsdjsj-->
+               
+                <script type="text/javascript">
+                    google.charts.load('current', {
+                        'packages': ['bar']
+                    });
+                    google.charts.setOnLoadCallback(drawChart);
 
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['', 'Test', 'Study Material', 'Assignments',],
+                            ['Mon', 4, 3, 2],
+                            ['Tue', 5, 4, 2],
+                            ['Wed', 6, 11, 3],
+                            ['Thu', 3, 5, 5],
+                            ['Fri', 3, 4, 3],
+                            ['Sat', 9, 1, 5],
+                        ]);
 
-}
-}
-});
-</script>
+                        var options = {
+                            chart: {
+                                title: 'Weekly Activity',
+                                subtitle: '',
+                            }
+                        };
+
+                        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+                        chart.draw(data, google.charts.Bar.convertOptions(options));
+                    }
+                </script>
     </head>
 
 <body class="app-body">
@@ -148,7 +135,7 @@ onClick:function(e){
                         </a>
                     </li>
                     <li>
-                        <a href="" aria-expanded="false">
+                        <a href="reports1.html" aria-expanded="false">
                             <i class="fa fa-chart-bar"></i>
                             <span>Reports </span>
                         </a>
@@ -348,14 +335,14 @@ onClick:function(e){
 
                         <div class="card-header d-flex">
                             <div class="feed-header-title">
-                                <h5 class="text-primary">My Notifications<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+                                <h5 class="text-primary">Daily Enagagement Level(Min Spent)<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
 
                             </div>
                           
 
                         </div>
                         <div class="card-body">
-              <canvas id="myChart" width="200" height="200"></canvas>
+                  <div id="columnchart_material" style="height: 370px; width: 70%;"></div>
 
                         </div>
                         
