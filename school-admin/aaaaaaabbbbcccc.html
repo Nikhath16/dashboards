@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="csrf-token" content="cEo9IpbtHxqNkquOQbKqwAQ7KhGFg91pj5CmOlwP">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Laravel</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="http://3.23.129.206/study-app/public/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="http://3.23.129.206/study-app/public/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="http://3.23.129.206/study-app/public/css/addons/datatables.min.css" rel="stylesheet">
+  <link href="http://3.23.129.206/study-app/public/css/style.css" rel="stylesheet">
+  <link href="http://3.23.129.206/study-app/public/css/harry.css" rel="stylesheet">
+  <!--<link rel="stylesheet" media="screen and (min-width: 993px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (min-device-width: 763px) and (max-device-width: 992px)" href="css/tabscreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 576px)" href="css/smallscreen.css">-->
+  <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/0FB9BC3E-AD04-534A-A4EE-B64F31B26B8A/main.js" charset="UTF-8"></script><script type="text/javascript" src="http://3.23.129.206/study-app/public/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      
+               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+  <a class="navbar-brand desk-none desk1-none tab-none" href="http://3.23.129.206/study-app/public"><img src="http://3.23.129.206/study-app/public/images/logo.png" class="logoimg"> <span>Study At Home</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto text-align:center">
+    <a class="navbar-brand nbbaml tab1-none mobttab-none mob-none ml-5 pl-5" href="http://3.23.129.206/study-app/public/dashboard"><img src="http://3.23.129.206/study-app/public/images/logo.png" class="logoimg"> <span>Study At Home</span></a>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link " id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="logoimgr" src="http://3.23.129.206/study-app/public/images/userc.jpg">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+           <a class="dropdown-item" href="#"> Profile Settings</a>
+          <a class="dropdown-item" href="#"> Account</a>
+      <p class="pl-2">Change User to<p>
+      <ul>
+        <a class="dropdown-item" href="#">Rahul Jaikr</a>
+        <a class="dropdown-item" href="#">Suresh Raina </a>
+        <a class="dropdown-item" href="#">Rashika Sneha </a>
+        <a class="dropdown-item" href="#">Vihaan Bhai</a>
+      </ul>
+      <a href="http://3.23.129.206/study-app/public/logout" class="dropdown-item" href="#"> Logout</a>
+          
+    </div>
+      </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link " id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fas fa-bell navalt"></i><span class="badge badge-primary badge-pill navaltbadge">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#"> I Sem Result Will be Announced By Evening 17:10 PM</a>
+          <a class="dropdown-item" href="#"> Your Target Set</a>
+          <a class="dropdown-item" href="#"> Mathematics I-B 3 Unit Start At 12:00 PM</a>
+          <a class="dropdown-item" href="#"> Today Missing Your Time Table</a>
+          <a class="dropdown-item" href="#"> Your payment for next month is outstanding</a>
+        </div>
+      </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link " id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="logoimgr" src="http://3.23.129.206/study-app/public/images/help.png">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default mdmr" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#"> Getting Started</a>
+          <a class="dropdown-item" href="#"> How to – Videos</a>
+          <a class="dropdown-item" href="#"> Search for Help</a>
+      <a class="dropdown-item" href="#">  FAQs</a>
+    </div>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
+<!-- Start your project here--> 
+<div class="container-fluid">
+  <div class="row tlnt">
+    <div class="col-sm-4 col-lg-3 col-5 p-0">
+      <img class="splatimg ml-2" src="images/Icon/Metrics.png" alt="Study Plain"> Metrics
+    </div>
+  <div class="col-sm-3 col-lg-3 col-1 my-2">
+    <!--select class="browser-default custom-select p-0 pl-2">
+      
+    </select-->
+  </div>
+  <div class="col-sm-3 col-lg-3 col-1 my-2">
+    <!--select class="browser-default custom-select p-0 pl-2">
+      
+    </select-->
+  </div>
+    <div class="col-sm-3 col-lg-3 col-4 text-right">
+    &nbsp;
+  </div>
+  </div>
+</div>
+<!--End Model Popup -->
+<div class="container-fluid mspc_new">
+  <div class="container  border">
+  <div class="row mb-3" style="background:#f3f3f3">
+    <div class="col-12 col-sm-4 mt-2 mb-1"><h3>Hareesh Raveed</h3></div>
+    <div class="col-6 col-sm-2 mt-2">
+      <select class="browser-default custom-select">
+        <option selected>Select Subject</option>
+        <option value="1">Mathematics</option>
+        <option value="2">Physics</option>
+        <option value="3">Chemistry </option>
+        <option value="4">Second Language</option>
+        <option value="5">English</option>
+      </select>
+    </div>
+    <div class="col-6 col-sm-2 mb-1 mt-2">
+      <select class="browser-default custom-select">
+        <option selected>Select Date</option>
+        <option value="1">01 Jan 2019</option>
+        <option value="2">01 May 2019</option>
+        <option value="3">01 Sep </option>
+      </select>
+    </div>
+    <div class="col-6 col-sm-2 mb-1 mt-2">
+      <select class="browser-default custom-select">
+        <option selected>Share Via</option>
+        <option value="1"> Facebook</option>
+        <option value="2"> Twitter</option>
+        <option value="3"> Linkedin</option>
+        <option value="3"> Youtube</option>
+      </select>
+    </div>
+    <div class="col-12 col-sm-2 mb-1 mt-3 text-right">
+      <i class="fas fa-filter mr-2 text-default" title="Filter"></i>
+      <i class="far fa-file-pdf mr-2 text-default" title="PDF Download"></i>
+      <i class="fas fa-cog mr-2 text-default" title="Settings"></i>
+    </div>
+</div>  
+  
+    <div class="row wow  fadeIn">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-4">
+
+          <!--Card-->
+          <div class="card">
+            <div class="card-header">Study App Perfamance</div>
+            <!--Card content-->
+            <div class="card-body">
+
+        <canvas id="lineChart"></canvas>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 mb-4">
+
+          <!--Card-->
+          <div class="card mb-4">
+
+            <!-- Card header -->
+            <div class="card-header text-center">
+              Time Spent by Subject
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <img class="" src="http://3.23.129.206/study-app/public/images/wp_nb.jpg" style="width:100%"
+                    >
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+          <!--Card-->
+          <div class="card mb-4">
+            <div class="card-header text-center">
+              Aggregate Performance
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+
+              <!-- List group links -->
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action waves-effect">Maths
+                  <span class="badge badge-success badge-pill pull-right">22%
+                    <i class="fas fa-arrow-up ml-1"></i>
+                  </span>
+                </a>
+                <a class="list-group-item list-group-item-action waves-effect">Physics
+                  <span class="badge badge-warning badge-pill pull-right">10%
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </span>
+                </a>
+        <a class="list-group-item list-group-item-action waves-effect">English
+                  <span class="badge badge-danger badge-pill pull-right">5%
+                    <i class="fas fa-arrow-down ml-1"></i>
+                  </span>
+                </a>
+                
+              </div>
+              <!-- List group links -->
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+    
+    <div class="row wow fadeIn">
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">Time Spent on Study App per day</div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <canvas id="myChart1"></canvas>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">Intermediate Mathematics 1A Lessons Taken</div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+        <canvas id="horizontalBar"></canvas>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">Doughnut Chart</div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <canvas id="doughnutChart"></canvas>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header">Horizontal Bar Chart</div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+              <canvas id="radarChart"></canvas>
+
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+      </div>
+  </div>
+</div>
+<div class="container-fluid mbicn">
+  <div class="container">
+  <div class="col-12 micnbtm mt-2">
+    <a href="http://3.23.129.206/study-app/public/studyplan">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Study Plans.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Study Plans</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/lessons">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Lessons.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Lessons</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/sessions">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Sessions.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Sessions</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/timetable">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/timetable.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Time Table</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/targets">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Targets.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Targets</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/assessments">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Assessments.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Assessments</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/results">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Results.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Results</span>
+      </span>
+    </a>
+    <a href="http://3.23.129.206/study-app/public/metrics">
+      <span class="btm-icon">
+      <span class="btm-icona"><img title="Study Plans" alt="Study Plans" src="http://3.23.129.206/study-app/public/images/Icon/Metrics.png" class="bisze"></span>
+      <span class="btm-iconb tab-none mob-none">Metrics</span>
+      </span>
+    </a>
+  </div>
+  </div>
+</div> <!-- Content here -->
+ 
+<!--Start Footer -->
+ <!-- Footer -->
+
+<!-- Copyright 
+<div class="footer-copyright text-left  grey lighten-3 p-1 mf">
+  <div class="row mfr"><div class="col-6 col-sm-4 col-lg-5 mf5">
+    <marquee style="color:#e10">Your Payment Is Pending</marquee>
+  </div>
+  <div class="col-6 col-sm-3 col-lg-3 mf3">
+    <a class="" href="index.html"><img src="images/logo.png" class="logoimg"></a>
+  </div>
+  <div class="col-sm-4 col-lg-4 mob-none mf4">
+    <img src="images/PayOpt.jpg" class="fpoimg">
+  </div>
+  </div>  
+</div>
+  <!-- Copyright -->
+<!--End Footer-->
+  <!-- End your project here-->
+  
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  
+  <script type="text/javascript" src="http://3.23.129.206/study-app/public/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="http://3.23.129.206/study-app/public/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="http://3.23.129.206/study-app/public/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="http://3.23.129.206/study-app/public/js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+<script type="text/javascript" src="http://3.23.129.206/study-app/public/js/addons/datatables.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js'></script>
+
+<script  src="http://3.23.129.206/study-app/public/js/calendar.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+$('#dtBasicExample').DataTable();
+$('.dataTables_length').addClass('bs-select');
+});
+</script>
+<script type="text/javascript">$(document).ready(function () {
+$('#dtVerticalScrollExample').DataTable({
+"scrollY": "443px",
+"scrollCollapse": true,
+});
+$('.dataTables_length').addClass('bs-select');
+});</script>
+
+<script type="text/javascript">
+
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["CSS", "BOOTSTRAP", "JAVA SCRIPT", "SSRS", "SQL DB", "ORACLE DB", "ANGULAR 7"],
+      datasets: [{
+        label: '% Aggregate',
+        data: [93, 69, 50, 97, 32, 73, 69],
+        backgroundColor: [
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)'
+        ],
+        borderColor: [
+          'rgba(75, 192, 192, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(255,99,132,1)',
+          'rgba(75, 192, 192, 1)',
+      'rgba(54, 162, 235, 1)',
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+
+</script>
+<script>
+    // Line
+    var ctx = document.getElementById("myChart1").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["My Score", "Avg of Age Group", "Avg of Same Class", "Avg of Town/District"],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 17, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+    //pie
+    
+    //line
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "New Lessons",
+            backgroundColor: [
+              'rgba(105, 0, 132, .2)',
+            ],
+            borderColor: [
+              'rgba(200, 99, 132, .7)',
+            ],
+            borderWidth: 2,
+            data: [37, 43, 40, 49, 51, 51, 51]
+          },
+          {
+            label: "Revisions",
+            backgroundColor: [
+              'rgba(0, 137, 132, .2)',
+            ],
+            borderColor: [
+              'rgba(0, 10, 130, .7)',
+            ],
+            data: [38, 45, 45, 50, 53, 53, 53]
+          },
+          {
+            label: "New Skill Addition",
+            backgroundColor: [
+              'rgba(75, 192, 192, .2)',
+            ],
+            borderColor: [
+              'rgba(75, 192, 192, .7)',
+            ],
+            data: [39, 43, 43, 51, 55, 55, 55]
+          }
+        ]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+
+    //radar
+    var ctxR = document.getElementById("radarChart").getContext('2d');
+    var myRadarChart = new Chart(ctxR, {
+      type: 'radar',
+      data: {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [{
+          label: "My First dataset",
+          data: [65, 59, 90, 81, 56, 55, 40],
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(200, 99, 132, .7)',
+          ],
+          borderWidth: 2
+        }, {
+          label: "My Second dataset",
+          data: [28, 48, 40, 19, 96, 27, 100],
+          backgroundColor: [
+            'rgba(0, 250, 220, .2)',
+          ],
+          borderColor: [
+            'rgba(0, 213, 132, .7)',
+          ],
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+    //doughnut
+    var ctxD = document.getElementById("doughnutChart").getContext('2d');
+    var myLineChart = new Chart(ctxD, {
+      type: 'doughnut',
+      data: {
+        labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+        datasets: [{
+          data: [300, 50, 100, 40, 120],
+          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+          hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+  //horizontalBar
+      new Chart(document.getElementById("horizontalBar"), {
+      "type": "horizontalBar",
+      "data": {
+      "labels": ["My Score", "Avg of Age Group", "Avg of Same Class", "Avg of Town/District"],
+      "datasets": [{
+        "label": "# My Score",
+        "data": [50, 53, 32, 43],
+        "fill": false,
+        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)"
+          
+        ],
+        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+        ],
+        "borderWidth": 1
+      }]
+    },
+      "options": {
+        "scales": {
+          "xAxes": [{
+            "ticks": {
+              "beginAtZero": true
+            }
+          }]
+        }
+      }
+    }); 
+  //horizontalBara
+      new Chart(document.getElementById("horizontalBara"), {
+      "type": "horizontalBar",
+      "data": {
+      "labels": ["My Score", "Avg of Age Group", "Avg of Same Class", "Avg of Town/District"],
+      "datasets": [{
+        "label": "# My Score",
+        "data": [50, 53, 32, 43],
+        "fill": false,
+        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)"
+          
+        ],
+        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+        ],
+        "borderWidth": 1
+      }]
+    },
+      "options": {
+        "scales": {
+          "xAxes": [{
+            "ticks": {
+              "beginAtZero": true
+            }
+          }]
+        }
+      }
+    });
+
+  </script>
+  <script type="text/javascript">
+    // Tooltips Initialization
+$(function () {
+$('[data-toggle="tooltip"]').tooltip()
+})
+ </script>
+</body>
+
+</html>
