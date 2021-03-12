@@ -366,7 +366,6 @@ h6 {
     padding-bottom: 0.5rem;
 }
 
-
 /* header end */
 
 .content-page {
@@ -739,6 +738,42 @@ h6 {
 .btn-outline-white:not(:disabled):not(.disabled):active:focus,
 .btn-outline-white:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-white.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(87, 123, 36, 0.5);
+}
+/*quiz button*/
+.btn-outline-quiz {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-quiz:hover {
+    color: #fff;
+    background-color: #f1a460;
+    border-color: #f1a460;
+}
+
+.btn-outline-quiz:focus,
+.btn-outline-quiz.focus {
+    box-shadow: 0 0 0 0.2rem rgba(87, 123, 36, 0.5);
+}
+
+.btn-outline-quiz.disabled,
+.btn-outline-quiz:disabled {
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-outline-quiz:not(:disabled):not(.disabled):active,
+.btn-outline-quiz:not(:disabled):not(.disabled).active,
+.show>.btn-outline-quiz.dropdown-toggle {
+    color: #fff;
+    background-color: #f1a460;
+    border-color: #f1a460;
+}
+
+.btn-outline-quiz:not(:disabled):not(.disabled):active:focus,
+.btn-outline-quiz:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-quiz.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(87, 123, 36, 0.5);
 }
 /*text color*/
@@ -1507,23 +1542,20 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }
 
 .header-bottom .dropdown-item:hover {
-    background-color: rgba(246, 127, 33, 0.5);
+    background-color: #f5fcea;
 }
 
 .header-bottom .dropdown-menu {
-    margin: 0;
+    background-color: #8ec63f;
+    border: 0;
     border-radius: 0;
-    /* padding: 0; */
-    /* top: calc(100% + 1px); */
-    border: 1px solid #d8dbe0;
 }
-
 .header-bottom .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem;
 }
 
 .header-bottom .navbar-light .navbar-nav .nav-link:hover {
-    background-color: rgba(246, 127, 33, 0.5);
+    background-color: #8ec63f;
     color: rgba(0, 0, 0, .5);
 }
 
@@ -2070,6 +2102,10 @@ label {
         } 
 .bg-secondary {
     background-color: #8ec63f!important;
+}
+
+.bg-quiz {
+    background-color: #f19646!important;
 }
 .bg-primary {
     background-color: #fd804a!important;

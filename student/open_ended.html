@@ -11,18 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
 
  
-<style >
-  .quiz-footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
 
-   
-}
-</style>
 
 </head>
 
@@ -41,24 +30,27 @@
          
                 <div class=" col-12 mb-0 ">
                  <!-- desktop View -->
-                    <div class="row bg-info text-left sticky-top  ">
+                    <div class="row bg-secondary text-left sticky-top  ">
                         <div class="col-12  col-sm-12 col-md-12  font-weight-bold d-flex mb-0" id="course" >
                                              
-                                       <h5 class="font-weight-bold text-white my-3"> Mid Term Test;7th Grade Math</h5>
+                                   <div class="header-school-logo">
+                            <span class=" logo-sm"><img src="images/logo-sm.png" alt="" height="30"></span>
+                            <span class="font-weight-bold text-white ml-2">Mid Term Test;7th Grade Math</span>
+                        </div>
                                         <div class="ml-auto my-3 d-none d-sm-block ">
-                                        <button class="btn btn-outline-white btn-md" data-toggle="modal" data-target="#note" style="border-radius: 60%;"><i class="fa fa-comment " aria-hidden="true"></i></button>
+                                        <button class="btn btn-outline-quiz btn-md" data-toggle="modal" data-target="#note" style="border-radius: 60%;"><i class="far fa-envelope"></i></button>
                                         
-                                        <button class="btn btn-outline-white btn-md">Note</button>
-                                        <button class="btn btn-outline-white btn-md">Prev</button>
-                                        <button class="btn btn-outline-white btn-md">Next</button>
-                                        <button class="btn btn-outline-white btn-md">Save</button>
-                                       <a href="quickresult.html"> <button class="btn btn-outline-white btn-md">Submit</button></a>
+                                        <button class="btn btn-outline-quiz btn-md">Note</button>
+                                        <button class="btn btn-outline-quiz btn-md">Prev</button>
+                                        <button class="btn btn-outline-quiz btn-md">Next</button>
+                                        <button class="btn btn-outline-quiz btn-md">Save</button>
+                                       <a href="quickresult.html"> <button class="btn btn-outline-quiz btn-md">Submit</button></a>
                                         </div>
                                          </div>
                                          <div class="container-fluid" style="background: #f5fcea;">
              <div class=" d-flex mb-2">
                                  
-                <span> <b>Question No :</b> 3/8</span>
+                <span> <b>Question No :</b> 2/8</span>
               
 <div class="ml-auto float-right font-weight-bold row" >Time left&nbsp;<i class="far fa-clock mt-1"></i>
 &nbsp;:<body onload="startTime()">
@@ -76,7 +68,6 @@
             </div>
 
                     </div>
-                   
                  
              
                      <!-- desktop View end  -->
@@ -121,7 +112,7 @@
                                                             <label class="form-check-label " for="check1"> Show Keypad</label>
 
                                                         </div>
-                                                        <button class="btn btn-outline-secondary btn-sm">Check Answe</button>
+                                                        <button class="btn btn-outline-secondary btn-sm">Check Answer</button>
                    
 
                    
@@ -135,27 +126,28 @@
 
                    <!-- Desktop View End -->
                   
-                <div class="quiz-footer bg-info " >
+              <div class="quiz-footer bg-secondary " >
    <div class="row  shadow-sm mt-3">
 <div class="col-12  col-sm-12 col-md-12 d-flex mb-0"  >
                     <ul class="list-inline list-inline-horizontal justify-content-center mt-2  ">
-                    <li class="list-inline-item bg-default text-black ml-3" data-toggle="tooltip" data-placement="top" title="Right" ><i class="fab fa-font-awesome-flag"></i>1</li>
-                      <li class="list-inline-item bg-default text-black" data-toggle="tooltip" data-placement="top" title="Right">2</li>
-                       <li class="list-inline-item bg-default text-black " data-toggle="tooltip" data-placement="top" title="Right">3</li>
-                        <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">4</li>
-                         <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">5</li>
-                          <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">6</li>
-                           <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">7</li>
-                           <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">8</li>
+                    <li class="list-inline-item bg-quiz text-black ml-3" data-toggle="tooltip" data-placement="top" title="Right" ><i class="fab fa-font-awesome-flag"></i>&nbsp;1</li>
+                      <li class="list-inline-item bg-quiz text-black" data-toggle="tooltip" data-placement="top" title="Right">2</li>
+                       <li class="list-inline-item bg-quiz text-black " data-toggle="tooltip" data-placement="top" title="Right">3</li>
+                        <li class="list-inline-item  text-white" data-toggle="tooltip" data-placement="top" title="Right">4</li>
+                         <li class="list-inline-item  text-white" data-toggle="tooltip" data-placement="top" title="Right">5</li>
+                          <li class="list-inline-item  text-white" data-toggle="tooltip" data-placement="top" title="Right">6</li>
+                           <li class="list-inline-item  text-white" data-toggle="tooltip" data-placement="top" title="Right">7</li>
+                           <li class="list-inline-item  text-white" data-toggle="tooltip" data-placement="top" title="Right">8</li>
                   
                    </ul>
                    </div>
                    <div class="row col-sm-12 col-md-12 mb-2  "  >
-                   <div class="col-sm-12 col-md-1  "  ><span class="ml-3 font-weight-bold  ">Responded:</span></div>
+                   <div class="col-sm-12 col-md-1  "  ><span class="ml-3 font-weight-bold  ">Progress:</span></div>
                     <div class="col-sm-12 col-md-7  "  ><div class="  mb-1 mt-1 " data-toggle="tooltip" data-placement="right" title="55%" >
-                     <div class="progress">
-                      <div data-percentage="0%" style="width: 60%;" class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  
+                    <div class="progress">
+  <div class="progress-bar " role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div>
                    
                 </div></div>
                    
