@@ -1815,18 +1815,41 @@ label {
     overflow-y: auto;
 }
 /*quiz app css*/
+
 .list-inline-item {
-  
+ 
     cursor: pointer;
-    padding: 0.43rem 0.89rem;
+    padding: 0.13rem 0.29rem;
+
+}
+.list-inline>
+    dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
 }
 
-        .list-inline-item:hover {
+.border-quiz {
+    border: 1px solid #dee2e6!important;
+}
+
+       /* .list-inline-item:hover {
             background: #ddd;
-        }
+        }*/
         /*.myhgtcl{overflow: auto;
     height: 561px;}*/
-
+    .quiz-band-top{
+        height: 50px;
+    }
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.9rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .70rem;
+       background-color: #8ec63f;
+    border-radius: .25rem;
+}
    .progress-bar {
     display: -ms-flexbox;
     display: flex;
@@ -1835,11 +1858,15 @@ label {
     -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
-    color: #f5fcea;
+    color: black;
     text-align: center;
     white-space: nowrap;
-    background-color: #fd804a;
+    background-color: #fff;
+    
     transition: width .6s cubic-bezier(0.63, 0.44, 0.25, 1);
+}
+.border-progress {
+    border: 1px solid #f5fcea!important;
 }
 .bg-info {
     background-color: #3d7e88!important;
@@ -2148,3 +2175,6 @@ label {
 .card-title {
      margin-bottom: 0rem; 
 }
+ .question{
+   margin-left:  2rem;
+ }
