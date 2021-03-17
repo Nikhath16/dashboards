@@ -25,7 +25,15 @@
   <script  src="jstree/jquery-1.4.4.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script  src="jstree/jquery.ztree.core.js"></script>
+<style >
+  .ztree * {
 
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+</style>
       <script type="text/javascript">
     <!--
     var setting = {
@@ -37,27 +45,27 @@
     };
 
     var zNodes =[
-      { id:1, pId:0, name:"A Road map for Common core Curriculum class 8 maths", open:false, iconOpen:"SVG/Orange/1.svg", iconClose:"SVG/Orange/2.svg" },
-      { id:11, pId:1, name:"Squares and square roots", icon:"SVG/Orange/3.svg"},
-         { id:111, pId:11, pId:111, name:"cubes and cube ro0ts", icon:"SVG/Orange/4.svg"},
-      { id:12, pId:1, name:"properties of square", icon:"SVG/Orange/4.svg"},
+      { id:1, pId:0, name:"A Road map for Common core Curriculum class 8 maths", open:false, iconOpen:"SVG/Green/1.svg", iconClose:"SVG/Green/2.svg" },
+      { id:11, pId:1, name:"Squares and square roots", icon:"SVG/Green/3.svg"},
+         { id:111, pId:11, pId:111, name:"cubes and cube ro0ts", icon:"SVG/Green/4.svg"},
+      { id:12, pId:1, name:"properties of square", icon:"SVG/Green/4.svg"},
       { id:13, pId:1, name:"square roots", icon:"SVG/Green/1.svg"},
       { id:2, pId:0, name:"Date Handling and analysis", open:false, iconOpen:"SVG/Green/1.svg", iconClose:"SVG/Green/2.svg"},
       { id:21, pId:2, name:"linear graphs", icon:"SVG/Green/3.svg"},
-      { id:22, pId:2, name:"Data organizing", icon:"SVG/Gray/4.svg"},
-      { id:23, pId:2, name:"Data grouping", icon:"SVG/Gray/1.svg"},
-      { id:24, pId:2, name:"Circle andPie charts", icon:"SVG/Gray/2.svg"},
-      { id:25, pId:2, name:"Probability theory", icon:"SVG/Gray/3.svg"},
+      { id:22, pId:2, name:"Data organizing", icon:"SVG/Green/4.svg"},
+      { id:23, pId:2, name:"Data grouping", icon:"SVG/Green/1.svg"},
+      { id:24, pId:2, name:"Circle andPie charts", icon:"SVG/Green/2.svg"},
+      { id:25, pId:2, name:"Probability theory", icon:"SVG/Green/3.svg"},
       { id:3, pId:0, name:"exponents law", open:true },
       { id:31, pId:3, name:"reducing equationto simple forms"},
       { id:32, pId:3, name:"test and disivibility"},
       { id:33, pId:3, name:"power with negative exponents"},
-           { id:4, pId:0, name:"node2", open:false, iconOpen:"SVG/Multi_colour/1.svg", iconClose:"SVG/Multi_colour/2.svg"},
-      { id:41, pId:4, name:"pie charts", icon:"SVG/Multi_colour/3.svg"},
-      { id:42, pId:4, name:"leaf node2", icon:"SVG/Multi_colour/4.svg"},
-      { id:43, pId:4, name:"leaf node3", icon:"SVG/Multi_colour/1.svg"},
-      { id:44, pId:4, name:"leaf node4", icon:"SVG/Multi_colour/2.svg"},
-      { id:45, pId:4, name:"leaf node5", icon:"SVG/Multi_colour/3.svg"},
+           { id:4, pId:0, name:"node2", open:false, iconOpen:"SVG/Green/1.svg", iconClose:"SVG/Green/2.svg"},
+      { id:41, pId:4, name:"pie charts", icon:"SVG/Green/3.svg"},
+      { id:42, pId:4, name:"leaf node2", icon:"SVG/Green/4.svg"},
+      { id:43, pId:4, name:"leaf node3", icon:"SVG/Green/1.svg"},
+      { id:44, pId:4, name:"leaf node4", icon:"SVG/Green/2.svg"},
+      { id:45, pId:4, name:"leaf node5", icon:"SVG/Green/3.svg"},
  { id:5, pId:0, name:"node5", open:false, iconOpen:"PNG/Green/1.png", iconClose:"PNG/Green/2.png"},
       { id:51, pId:5, name:"leaf node1", icon:"PNG/Green/3.png"},
       { id:52, pId:5, name:"leaf node2", icon:"PNG/Green/4.png"}
