@@ -1722,17 +1722,31 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 /*additional added*/
 .nav-tabs .nav-link {
     border: 2px solid transparent;
+    /* border-radius: 5px; */
+    /* padding-top: 2px; */
+    padding-bottom: 2px;
+    /* border-top-right-radius: .25rem; */
+    border-bottom: none;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    border-radius: 30px 30px 0 0;
+
+    
+}
+
+/*.nav-tabs .nav-link {
+    border: 2px solid transparent;
     border-radius: 6rem;
  padding-top: 2px;
   
   padding-bottom: 2px;
-    /* border-top-right-radius: .25rem; */
-}
+   
+}*/
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #fd804a;
     background-color: #d5e6ba;
     border-color: #8ec63f #8ec63f #8ec63f;
-     font-size: 18px;
+     font-size: 16px;
 }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     border-color: #f1a460 #f1a460 #f1a460;
@@ -2199,6 +2213,7 @@ label {
  }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link {
     border-color: #8ec63f #8ec63f #8ec63f;
+    color: rgba(0,0,0,.8);
 }
 .nav-fill .nav-item, .nav-fill>.nav-link {
     -ms-flex: 1 1 auto;
