@@ -1717,21 +1717,19 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
     -ms-flex: 1 1 auto;
     flex: 0 0 auto;
     text-align: center;
-    margin: 0.3rem;
+    /*margin: 0.3rem;*/
 }
 /*additional added*/
 .nav-tabs .nav-link {
     border: 2px solid transparent;
     /* border-radius: 5px; */
-    /* padding-top: 2px; */
+    padding-top: 2px;
     padding-bottom: 2px;
     /* border-top-right-radius: .25rem; */
     border-bottom: none;
     margin-bottom: 0px;
-    margin-left: 7px;
+    /* margin-left: 7px; */
     border-radius: 30px 30px 0 0;
-
-    
 }
 
 /*.nav-tabs .nav-link {
@@ -1744,7 +1742,7 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }*/
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #fd804a;
-    background-color: #d5e6ba;
+    background-color: #f5fcea;
     border-color: #8ec63f #8ec63f #8ec63f;
      font-size: 16px;
 }
@@ -2214,6 +2212,7 @@ label {
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link {
     border-color: #8ec63f #8ec63f #8ec63f;
     color: rgba(0,0,0,.8);
+    background: #d5e6ba;
 }
 .nav-fill .nav-item, .nav-fill>.nav-link {
     -ms-flex: 1 1 auto;

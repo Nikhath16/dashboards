@@ -1633,3 +1633,12 @@ a {
     text-decoration: none;
     background-color: #fd804a;
 }
+.popover-header {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    background-color: #f5fcea;
+    border-bottom: 3px solid #8ec63f;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
