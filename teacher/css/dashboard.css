@@ -28,7 +28,9 @@
     padding-top: 0;
     padding-bottom: 0;
 }
-
+.bg-table{
+    background-color: #f5fcea !important;
+}
 .bg-light {
     background-color: #fff !important;
 }
