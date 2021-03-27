@@ -29,6 +29,6 @@ $(document).ready(function() {
         lengthChange: true,
     });
 });
-$('body').on('mouseover mouseout', '.header-bottom .dropdown', function(e) {
-    $(e.target).dropdown('toggle');
-});
+// $('body').on('mouseover mouseout', '.header-bottom .dropdown', function(e) {
+//     $(e.target).dropdown('toggle');
+// });

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" />
+
+
+</head>
+
+<body class="app-body">
+    <div class="wrapper">
+
+        <div class="content-page">
+            <!-- header -->
+             <header class="header header-fixed navbar-custom">
+                <div class="container-fluid">
+                    <div class="header-top">
+                        <div class="header-school-logo">
+                            <span class="school-logo"><img src="images/forsyth-default-logo.png" alt=""></span>
+                            <span class="school-name">Forsyth County Schools</span>
+                        </div>
+
+                        <ul class="list-unstyled topnav-menu  mb-0 ml-auto">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-bell" href="#" id="dropdownbellnotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">4</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right bell-dropdown" aria-labelledby="dropdownbellnotification">
+                                    <!-- item-->
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Notifications </h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 1 fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                              <div class="dropdown-divider"></div>
+                                              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 2 gfgfg fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user p-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Parent:</span>
+                                    <img src="images/user-1.jpg" alt="user-image" class="rounded-circle">
+                                     
+                                    <span class="pro-user-name ml-1">
+
+                                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <!-- item-->
+                                  
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+               
+
+            </header>
+            <!-- header end -->
+           <!--  view student modal start -->
+            
+                   <!--  modal end -->
+                     <!--  add student modal start -->
+      
+                   <!--  modal end -->
+                   <div class="page-top text-dark" style="background:#f5fcea;">
+            <div class="container-fluid">
+                <div class="row p-2">
+                <!-- <div class="col-md-1"><a type="button" id="sidebarCollapse">
+                            <i class="fe-menu" aria-hidden="true"></i>
+
+                        </a></div> -->
+                    <div class="col-md-6 text-left">
+                      <div class="row">
+                <!-- <i class="fas fa-bell mr-2 myfa"> <span class="badge badge-primary text-light "  style="position: absolute;font-size: 7px;">7</span></i> --> 
+                <span class="mr-5"><a type="button" id="sidebarCollapse">
+                            <i class="fe-menu fa-lg" aria-hidden="true"></i>
+
+                        </a></span> 
+                <span> <b>Student Name</b></span>
+                <div class="dropdown dropdown">  <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;  <i class="fe-refresh-ccw " aria-hidden="true"> </i>  </a>  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">  <li class="dropdown-item"> Course 1</li>  <li class="dropdown-item">Course 2</li>  <li class="dropdown-item">Course 3</li>  </ul>  </div>
+                     </div>
+
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <b>  Course:</b> frth <!--<i class="fas fa-envelope mx-2"></i><i class="fas fa-comment-dots mx-1"></i>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="main">
+                <!-- sidebar -->
+                <div id="sidebar" class="left-side-menu sidebar-fixed">
+
+                    <div id="sidebar-menu" class="active">
+                        
+
+                        <ul class="metismenu " id="side-menu">
+                         <li class="">
+                                <a href="tests.html" aria-expanded="false">
+                                    <i class="fas fa-file-signature"></i>
+                                    <span> Tests & Assignments </span>
+                                </a>
+                            </li>
+                          <li class="">
+                                <a href="#" aria-expanded="false" class="active">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span> Grades </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attendance.html" aria-expanded="false">
+                                  <i class="fa fa-chart-bar"></i>
+                                  
+                                    <span> Attendance </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-expanded="false">
+                               <i class="fas fa-window-restore"></i>
+                                    <span>Announcement </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" aria-expanded="false">
+                                  <i class="far fa-calendar-alt "></i>
+                                    <span>Holiday & Breaks  </span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- sidebar end -->
+                
+                
+                <div class="content inner-page">
+                   
+                     <div class="accordion mt-4" id="accordionExample">
+
+
+                        <h5 class="accordion-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                         Course Name
+                            <i class="mdi mdi-chevron-down"></i>
+                        </h5>
+
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+
+                            <!-- widgets -->
+
+                            <!-- dashboard -->
+                                <div class="row">
+        <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+          <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+           
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+          <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+         
+         
+       
+        
+        
+
+    </div>
+                            <!-- widgets end -->
+
+
+                        </div>
+
+
+                    </div>
+                    <!-- szad -->
+                   <div class="accordion mt-4" id="accordionExample1">
+
+
+                        <h5 class="accordion-title" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+
+                         Course Name
+                            <i class="mdi mdi-chevron-down"></i>
+                        </h5>
+
+
+                        <div id="collapseOne1" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample1">
+
+
+                            <!-- widgets -->
+
+                            <!-- dashboard -->
+                            <div class="row">
+        <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+          <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+           
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+          <a href="course-details.html"><div class="col-sm-4 py-2 ">
+        
+            <div class="card card-body student-card h-100">
+              <div class=" d-flex ">
+                                <h6 class="card-title text-secondary">Session 1</h6>
+<div class="ml-auto pl-3" ><a href="course-details.html"><i class="fas fa-caret-right fa-2x text-primary"></i></a></div>
+
+
+                        </div>
+                        <h6>Session 1</h6>
+                      <h6 >78%</h6>
+
+                        
+            </div>
+        </div></a>
+         
+         
+       
+        
+        
+
+    </div>
+                            <!-- widgets end -->
+
+
+                        </div>
+
+
+                    </div>
+                    <!-- table end -->
+
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div id="overlay"></div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/bootstrap.bundle.min.js'></script>
+        <script src="js/popper.min.js"></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/app.js'></script>
+
+
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+        <script src='js/script.js'></script>
+
+        <script>
+        </script>
+</body>
+
+</html>
