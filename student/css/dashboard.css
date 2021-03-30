@@ -1862,6 +1862,9 @@ label {
 .border-quiz {
     border: 1px solid #dee2e6!important;
 }
+.border-ranswer{
+ border: 1px solid #8ec63f!important;   
+}
 
        /* .list-inline-item:hover {
             background: #ddd;

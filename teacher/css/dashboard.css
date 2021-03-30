@@ -1644,3 +1644,89 @@ a {
     border-top-left-radius: calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px);
 }
+.quiz-band-top {
+    height: 50px;
+}
+.header-school-logo {
+    display: flex;
+    align-items: center;
+}
+.bg-secondary {
+    background-color: #8EC63F!important;
+}
+.logo-sm {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin: 1rem auto;
+}
+.quiz-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.btn-outline-quiz {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-outline-quiz:hover {
+    color: #fff;
+    background-color: #F1A460;
+    border-color: #F1A460;
+}
+.btn-outline-quiz:focus,
+.btn-outline-quiz.focus {
+    box-shadow: 0 0 0 0.2rem rgba(87, 123, 36, 0.5);
+}
+.btn-outline-quiz.disabled,
+.btn-outline-quiz:disabled {
+    color: #fff;
+    background-color: transparent;
+}
+.btn-outline-quiz:not(:disabled):not(.disabled):active,
+.btn-outline-quiz:not(:disabled):not(.disabled).active,
+.show>.btn-outline-quiz.dropdown-toggle {
+    color: #fff;
+    background-color: #F1A460;
+    border-color: #F1A460;
+}
+.btn-outline-quiz:not(:disabled):not(.disabled):active:focus,
+.btn-outline-quiz:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-quiz.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(87, 123, 36, 0.5);
+}
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.9rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .70rem;
+       background-color: #8EC63F;
+    border-radius: .25rem;
+}
+   .progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    transition: width .6s cubic-bezier(0.63, 0.44, 0.25, 1);
+}
+.border-progress {
+    border: 1px solid #F5FCEA!important;
+    }
+    .border-ranswer{
+ border: 1px solid #8EC63F!important;
+}
