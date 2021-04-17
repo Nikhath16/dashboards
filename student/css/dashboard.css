@@ -2222,3 +2222,9 @@ label {
      flex: 0 0 auto; 
      text-align: center; 
 }
+.ext_app_logo {
+    width: 120px;
+    height: auto;
+padding-left: 2px; 
+     margin-left: 4px; 
+}
