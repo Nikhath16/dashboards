@@ -18,6 +18,11 @@ $(function () {
      $(function () {
     $('[data-toggle="popover"]').popover()
   })
+     $(document).ready(function() {
+    $('#student-table').DataTable({
+        lengthChange: true,
+    });
+});
      $(document).ready(function () {
 $('#sessions').DataTable({
     processing: true,
