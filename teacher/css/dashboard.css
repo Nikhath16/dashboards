@@ -1740,21 +1740,21 @@ a {
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
 }
-.dot1 {
+.correct-answer {
   height: 25px;
   width: 25px;
   background-color: #FD6698;
   border-radius: 50%;
   display: inline-block;
 }
-.dot2 {
+.wrong-answer {
   height: 25px;
   width: 25px;
   background-color: #8ec63f;
   border-radius: 50%;
   display: inline-block;
 }
-.dot3 {
+.question-skipped {
   height: 25px;
   width: 25px;
   background-color: #ffc40c;

@@ -148,7 +148,9 @@ h6 {
 .navbar-custom .topnav-menu .nav-bell::after {
     display: none;
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: #2B2B2B ;
+}
 .navbar-custom .topnav-menu li {
     margin-right: 1rem;
 }
@@ -629,6 +631,7 @@ h6 {
 .btn-outline-secondary {
     color: #8ec63f;
     border-color: #8ec63f;
+    background: #f5fcea;
 }
 
 .btn-outline-secondary:hover {
@@ -2134,12 +2137,13 @@ label {
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
 }
 .exam-card{
-    background-color: #f5fcea;
+   /* background-color: #f5fcea;*/
+     border: 3px solid #8ec63f;
 }
 .exam-password {
     padding: 15px;
-    background-color: #f5fcea;
-    border-left: 2px solid #fd804a;
+    background-color: white;
+    border-left: 4px solid #8ec63f;
     margin-bottom: 10px;
     -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
