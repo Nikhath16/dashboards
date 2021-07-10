@@ -13,7 +13,18 @@
 
 
 </head>
+<style>
+table.dataTable thead th {
+  white-space: nowrap
 
+}
+table.dataTable tbody td {
+  white-space: nowrap;
+  /*max-width: 30px;*/
+  overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+</style>
 <body class="app-body">
     <div class="wrapper">
 
@@ -129,64 +140,9 @@
             <!-- header end -->
             <div class="main">
                 <!-- sidebar -->
-                <div id="sidebar" class="left-side-menu sidebar-fixed">
-
-                    <div id="sidebar-menu" class="active">
-                        <!-- <a type="button" id="sidebarCollapse">
-                            <i class="fa fa-caret-left" aria-hidden="true"></i>
-
-                        </a> -->
-
-                        <ul class="metismenu " id="side-menu">
-                            <li class="">
-                                <a href="student.html" aria-expanded="false">
-                                    <i class="fas fa-file-video"></i>
-                                    <span> Class Roster </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="attendance.html" aria-expanded="false">
-                                    <i class="fas fa-school"></i>
-                                    <span> Attendance </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tests.html" class="active" aria-expanded="false">
-                                    <i class="fas fa-user-tie"></i>
-                                    <span> Tests </span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#" aria-expanded="false">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                    <span> Assignment </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="" aria-expanded="false">
-                                    <i class="fas fa-window-restore"></i>
-                                    <span>Gradebook  </span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#" aria-expanded="false">
-                                    <i class="fas fa-book-open"></i>
-                                    <span> Records & Reports </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="" aria-expanded="false">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                    <span> Resources & Docs </span>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
+               
+               
+               
                 <!-- sidebar end -->
                 <div class="content">
 
@@ -202,75 +158,135 @@
                             </div>
 
                         </div>
-                        <div class="card-body">
-
-                            <div class="table-responsive-lg">
-                                <table id="student-table" class="table  table-hover">
+                       <div class="card-body">
+                            <div class="table-overflow">
+                                <table id="student-table" class="table student-table table-responsive-sm table-striped  table-hover"  style="table-layout: fixed;" width="100%" >
+                                  
                                     <thead class="bg-default">
-                                        <tr>
-                                            <th>Test Title</th>
-                                            <th>Active Flag</th>
-                                            <th>Due Date</th>
-                                            <th>#Taken</th>
-                                            <th>#Question</th>
-                                            <th>Time Duration</th>
-                                            <th>Edit - View - Delete</th>
-                                            <th>Settings</th>
+                                        <tr style="position: sticky;">
+                                             <th class="text-left" width="1%" >#</th>
+                                            <th class="text-left">Test Title</th>
+                                             <th class="text-center">Active</th>
+                                            <th class="text-center">Due </th>
+                                            <th class="text-center">Class </th>
+                                             <th class="text-center">#Taken</th>
+                                              <th class="text-center">#Question</th>
+                                            <th class="text-center">Duration</th>
+<th class="text-center text-nowrap">Settings</th>
+                                            <th class="text-center text-nowrap"> </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Sample 11/27</td>
-                                            <td>
-                                                <label class="c-switch c-switch-label c-switch-outline-primary">
-                                                    <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
-                                                    </label>
-                                            </td>
-                                            <td>Nov 30, 2020</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>10 min</td>
-                                            <td>
-                                                <span class="p-2"><a href="#"><i class="fas fa-comment-dots"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="far fa-user-circle"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
-                                            </td>
-                                            <td><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling </td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            <td class="text-center">RDMS-1 Class </td>
+                                            <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-center">9</td>
+                                            <td class="text-center" title="04/10/2021 tghfghftgh hg">30min</td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">2.</td>
+                                            <td class="text-left" title="TD_Question Text Slider Questionnnnnn">TD_Question Text Slider Questionnnnnn</td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            <td class="text-center">RDMS-1 Class </td>
+                                            <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-center">9</td>
+                                            <td class="text-center" title="04/10/2021 tghfghftgh hg">30min</td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-center text-nowrap">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">3.</td>
+                                           <td class="text-left">The Dichotomous Question</td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            <td class="text-center">RDMS-1 Class </td>
+                                            <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-center">9</td>
+                                            <td class="text-center" title="04/10/2021 tghfghftgh hg">30min</td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">4.</td>
+                                            <td class="text-left">TD_Question category-5 </td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            <td class="text-center">RDMS-1 Class </td>
+                                            <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-center">9</td>
+                                            <td class="text-center" title="04/10/2021 tghfghftgh hg">30min</td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-center text-nowrap">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
                                         </tr>
                                         <tr>
-                                            <td>Sample 11/27</td>
-                                            <td>
-                                                <label class="c-switch c-switch-label c-switch-outline-primary">
-                                                    <input class="c-switch-input" type="checkbox" ><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
-                                                    </label>
-                                            </td>
-                                            <td>Nov 30, 2020</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>10 min</td>
-                                            <td>
-                                                <span class="p-2"><a href="#"><i class="fas fa-comment-dots"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="far fa-user-circle"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
-                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
-                                            </td>
-                                            <td><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-left">5.</td>
+                                          <td class="text-left" title="TD_Question Text Slider Questionnnnnn">TD_Question Text Slider Questionnnnnn</td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            <td class="text-center">RDMS-1 Class </td>
+                                            <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-center">9</td>
+                                            <td class="text-center" title="04/10/2021 tghfghftgh hg">30min</td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                            <td class="text-center text-nowrap">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
                                         </tr>
-
-
+                                         
 
                                     </tbody>
                                 </table>
 
                             </div>
                         </div>
+                       
+                       
                     </div>
                     <!-- table end -->
                     <!-- Test Settings model -->
 
                     <div class="modal fade" id="TestSettings" tabindex="-1" aria-labelledby="TestSettingsModal" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="TestSettingsModal">Test Settings</h5>
@@ -280,24 +296,61 @@
                                 </div>
                                 <div class="modal-body">
                                     <form action="">
-                                        <div class="form-row">
+                                        <h5 class="mb-2"><u>Access Control</u></h5>
+                                        <div class="form-row mb-2">
+
                                             <div class="col-md-8">
-                                                Allow Students To view Question Feedback:
+                                                Test can be taken only from a Fixed location:
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" id="Feedback1" name="Feedback" class="custom-control-input">
+                                                    <input type="radio" id="Feedback" name="Feedback1" class="custom-control-input" checked="">
                                                     <label class="custom-control-label" for="Feedback1">Yes</label>
                                                 </div>
                                                 <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" id="Feedback2" name="Feedback" class="custom-control-input">
+                                                    <input type="radio" id="Feedback2" name="Feedback1" class="custom-control-input" checked="">
                                                     <label class="custom-control-label" for="Feedback2">No</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-row mt-3">
+                                        <div class="form-row mt-2">
+
                                             <div class="col-md-8">
-                                                Allow Students To view Solution:
+                                               Protect Access with password
+                                            </div>
+                                            <div class="col-md-4">
+                                                 <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
+                                            </div>
+                                        </div>
+                                         <div class="form-row mt-2">
+
+                                            <div class="col-md-8">
+                                              Limit number of attempts to
+                                            </div>
+                                            <div class="col-md-4">
+                                                 <input class="form-control" id="text-input" type="number" name="text-input" placeholder="">
+                                            </div>
+                                        </div>
+                                        <h5 class="mt-2 mb-2"><u>Review options</u></h5>
+                                        <div class="form-row mb-2">
+
+                                            <div class="col-md-8">
+                                                Allow students to review submitted test
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback3" name="Feedback4" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback3">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback4" name="Feedback4" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback4">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <div class="col-md-8">
+                                                Allow students to see score after submitting test 
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -305,8 +358,86 @@
                                                     <label class="custom-control-label" for="customRadioInline1">Yes</label>
                                                 </div>
                                                 <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                                    <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input" checked="">
                                                     <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <h5 class="mt-2 mb-2"><u>Test in Session option</u></h5>
+                                        <div class="form-row mb-2">
+
+                                            <div class="col-md-8">
+                                                Allow students to view solution
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback5" name="Feedback8" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback5">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback6" name="Feedback" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback6">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <div class="col-md-8">
+                                                Allow students to view feedback
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline1" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <div class="col-md-8">
+                                                Display questions in random order
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline4" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline4" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2">
+                                            <div class="col-md-8">
+                                             Show time remaining
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline6" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline6" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <h5 class="mt-2 mb-2"><u>Scoring options</u></h5>
+                                          <div class="form-row mt-2">
+                                            <div class="col-md-8">
+                                            Round Score to 2 decimal plates
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline6" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline6" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
                                                 </div>
                                             </div>
                                         </div>

@@ -27,8 +27,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#student-table1').DataTable({
         lengthChange: true,
+        pageLength : 10,
     });
 });
 // $('body').on('mouseover mouseout', '.header-bottom .dropdown', function(e) {
 //     $(e.target).dropdown('toggle');
 // });
+ // var table = $('#student-table').DataTable({
+ //    pageLength : 5,
+ //    lengthMenu: [[5, 10, 20, -1], [5, 10, 20, 'Todos']]
+ //  })

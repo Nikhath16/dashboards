@@ -25,8 +25,8 @@
 .navbar {
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
+    height: 42px;
+    background-color: #f5fcea;
 }
 .bg-table{
     background-color: #f5fcea !important;
@@ -149,6 +149,7 @@
 .header-bottom {
     border-top: 1px solid #d8dbe0;
     width: 100%;
+    background-color: #f5fcea;
 }
 
 .sidebar-fixed {
@@ -485,9 +486,19 @@ margin-top:10px;
     background-color: #f5fcea;
 }
 
-.table td,
+.table td {
+    vertical-align: middle;
+        padding: .15rem;
+    
+    border-top: 1px solid #dee2e6;
+
+}
 .table th {
     vertical-align: middle;
+        padding: .45rem;
+    
+    border-top: 1px solid #dee2e6;
+
 }
 
 .page-link {
@@ -649,8 +660,9 @@ margin-top:10px;
 }
 
 .btn-outline-secondary {
-    color: #8ec63f;
+    color: white;
     border-color: #8ec63f;
+    background: #8ec63f;
 }
 
 .btn-outline-secondary:hover {
