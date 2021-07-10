@@ -25,7 +25,8 @@
 .navbar {
     padding-right: 30px;
     padding-left: 30px;
-    height: 42px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: #f5fcea;
 }
 .bg-table{
@@ -739,6 +740,16 @@ margin-top:10px;
     pointer-events: none;
 }
 
+table.dataTable thead th {
+  white-space: nowrap
+
+}
+table.dataTable tbody td {
+  white-space: nowrap;
+ /* max-width: 30px;*/
+  overflow: hidden !important;
+    text-overflow: ellipsis;
+}
 
 /*text color*/
 
