@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" />
+
+
+</head>
+<style>
+
+table.dataTable thead th {
+  white-space: nowrap
+
+}
+table.dataTable tbody td {
+  white-space: nowrap;
+ /* max-width: 30px;*/
+  overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.fixTableHead {
+     overflow-x: hidden;
+
+      overflow-y: auto;
+      height: 700px;
+    }
+    .fixTableHead thead th {
+      position: sticky;
+      top: 0;
+    }
+   
+    
+</style>
+<body class="app-body">
+    <div class="wrapper">
+
+        <div class="content-page">
+            <!-- header -->
+            <header class="header header-fixed navbar-custom">
+                <div class="container-fluid" style="background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, white , orange);">
+                    <div class="header-top">
+                        <div class="header-school-logo">
+                            <span class="school-logo"><img src="images/forsyth-default-logo.png" alt=""></span>
+                            <span class="school-name">Forsyth County Schools</span>
+                        </div>
+
+                        <ul class="list-unstyled topnav-menu  mb-0 ml-auto">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-bell" href="#" id="dropdownbellnotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">4</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right bell-dropdown" aria-labelledby="dropdownbellnotification">
+                                    <!-- item-->
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Notifications </h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 1 fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                              <div class="dropdown-divider"></div>
+                                              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 2 gfgfg fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user p-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Teacher:</span>
+                                    <img src="images/user-1.jpg" alt="user-image" class="rounded-circle">
+                                     
+                                    <span class="pro-user-name ml-1">
+
+                                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <!-- item-->
+                                  
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand Learnyve-logo" href="#">
+                            <img src="images/Learnyve_logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="class.html">Classes </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="allstudents.html">Students</a>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tests
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="myquestions.html">My Questions</a>
+                                    <a class="dropdown-item" href="myquestionc.html">My Question Categories</a>
+                                        <a class="dropdown-item" href="sassessment.html">Standard Assessment</a>
+                                        <a class="dropdown-item" href="myassessment.html">My Assessments</a>
+                                        <a class="dropdown-item" href="#">Score</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="assignments.html">Assignments</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="resouce.html">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="records.html">Records</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="external.html">External Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="collaborate.html">Collaborate</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="badges.html">Badges</a>
+                                </li>
+
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+
+            </header>
+             <!-- Add Modal -->
+            <div class="modal fade" id="add" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="staticBackdropLabel">Add Question Category </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" action="" method="post">
+                           
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Question Title:</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Question Key:</label>
+                                    <div class="col-md-9">
+                                      <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
+                                    </div>
+                                </div>
+                                
+           
+             <div class="form-group row">
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email"> Difficulty Level:</label>
+                                    <div class="col-md-9">
+                                <select class="form-control ">
+               <option>Select difficulty Level</option> 
+               <option> Afghanistan</option> 
+               <option>Argentina</option> 
+               
+               
+            </select>
+            </div>
+            </div>
+                        
+                               
+                                 
+                 
+                             
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- add Modal end -->
+            <!-- header end -->
+            <div class="main">
+                <div class="content">
+
+                    <!-- card -->
+                    <div class="card">
+                        <div class="card-header d-flex">
+                            <div class="feed-header-title">
+                                <h5 class="text-primary">Question Category<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+
+                            </div>
+                         
+<div class="ml-auto" data-toggle="tooltip" data-placement="top" title=" Add Question Category ">
+
+
+                           <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#add"><i class="fas fa-plus mr-1"></i>Add Question Category</button>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="fixTableHead table-overflow ">
+                                <table id="student-table" class="table student-table table-bordered table-responsive-sm table-striped  table-hover" style="table-layout: fixed;"  width="100%">
+                                    
+                                    <thead class="bg-default">
+                                        <tr style="position: sticky;">
+                                             <th class="text-left" width="2%" >#</th>
+                                            <th class="text-left" width="20%">Title</th>
+                                             <th class="text-center">Type</th>
+                                            <th class="text-center">Duration </th>
+                                            <th class="text-center">#Questions </th>
+                                             <th class="text-center">Addedd</th>
+                                              <th class="text-center">Assign to class</th>
+                                            <th class="text-center">Settings</th>
+                                            <th class="text-center text-nowrap" width="15%"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question</td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center"><label class="c-switch c-switch-label c-switch-pill c-switch-primary">
+                        <input class="c-switch-input" type="checkbox" checked=""><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span>
+                        </label></td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">1.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                            <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+
+                                         <tr>
+                                            <td class="text-left">2.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">3.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">4.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">5.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">6.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">7.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">8.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">9.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">10.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">11.</td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title=" TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question </td>
+                                            <td class="text-center">Test</td>
+                                            <td class="text-center">30min  </td>
+                                         <td class="text-center"><a href="repisotory-questions.html">10</a>  </td>
+                                            <td class="text-center">04/11/2020</td>
+                                            <td class="text-center"><a href="">Assign</a> </td>
+                                            <td class="text-center"><span class="p-2"><a href="javascript:void(0)"><i class="fas fa-cog fa-lg" aria-hidden="true" data-toggle="modal" data-target="#TestSettings"></i></a></span></td>
+                                           
+                                            <td class="text-center ">
+<button class="btn btn-link" data-toggle="modal" data-target="#edit"> <i class="fe-edit  fa-lg" data-toggle="tooltip" data-placement="top" title="Edit"></i></button>
+<button class="btn btn-link"> <a href="student.html"><i class="fe-eye  fa-lg  text-success" data-toggle="tooltip" data-placement="top" title="view"></i></a></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            
+                                        </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+                    <!-- card end -->
+
+<!-- Test Settings model -->
+
+                    <div class="modal fade" id="TestSettings" tabindex="-1" aria-labelledby="TestSettingsModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="TestSettingsModal">Security and Compliance Settings</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="mb-2 text-primary text-center">Test Title</h5>
+                                    <form action="">
+                                        <h5 class="mb-2"><u>Access Control</u></h5>
+                                        <div class="form-row  ml-5 ">
+
+                                            <div class="col-md-8">
+                                                Test can be taken only from a Fixed location:
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback" name="Feedback1" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback2" name="Feedback1" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row  ml-5">
+
+                                            <div class="col-md-8">
+                                               Protect Access with password
+                                            </div>
+                                            <div class="col-md-4 ">
+                                                 <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
+                                            </div>
+                                        </div>
+                                         <div class="form-row  ml-5 ">
+
+                                            <div class="col-md-8">
+                                              Limit number of attempts to
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                 <input class="form-control" id="text-input" type="number" name="text-input" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-row  ml-5 ">
+
+                                            <div class="col-md-8">
+                                                Allow save and resume later:
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback" name="resume" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback2" name="resume" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="mt-2 mb-2"><u>Review options</u></h5>
+                                        <div class="form-row mb-2  ml-5">
+
+                                            <div class="col-md-8">
+                                                Allow students to review submitted test
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback3" name="Feedback4" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback3">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback4" name="Feedback4" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback4">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2  ml-5">
+                                            <div class="col-md-8">
+                                                Allow students to see score after submitting test 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <h5 class="mt-2 mb-2"><u>Test in Session option</u></h5>
+                                        <div class="form-row mb-2  ml-5">
+
+                                            <div class="col-md-8">
+                                                Allow students to view solution
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback5" name="Feedback8" class="custom-control-input">
+                                                    <label class="custom-control-label" for="Feedback5">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="Feedback6" name="Feedback" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="Feedback6">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2  ml-5">
+                                            <div class="col-md-8">
+                                                Allow students to view feedback
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline1" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2  ml-5">
+                                            <div class="col-md-8">
+                                                Display questions in random order
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline4" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline4" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2  ml-5">
+                                            <div class="col-md-8">
+                                             Show time remaining
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline15" name="customRadioInline16" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline15" name="customRadioInline16" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <h5 class="mt-2 mb-2"><u>Scoring options</u></h5>
+                                          <div class="form-row mt-2  ml-5">
+                                            <div class="col-md-8">
+                                            Round Score to 2 decimal plaes
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline6" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline6" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-2 ml-5">
+                                            <div class="col-md-8">
+                                            Round to the nearest whole number
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline11" name="customRadioInline7" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline11">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline12" name="customRadioInline7" class="custom-control-input" checked="">
+                                                    <label class="custom-control-label" for="customRadioInline12">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Test Settings model end -->
+
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div id="overlay"></div>
+        </footer>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/bootstrap.bundle.min.js'></script>
+        <script src="js/popper.min.js"></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/app.js'></script>
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+        <script src='js/script.js'></script>
+
+</body>
+
+</html>
