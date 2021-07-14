@@ -33,6 +33,19 @@ table.dataTable tbody td {
     display:block;
     z-index:999;
 }
+.fixTableHead {
+     overflow-x: hidden;
+
+      overflow-y: auto;
+      height: 70vh !important;
+      z-index: 1;
+    }
+    .fixTableHead thead th {
+      position: sticky;
+      top: 0;
+        z-index: 100 !important;    }
+   
+
 </style>
 <body class="app-body">
     <div class="wrapper">
@@ -359,7 +372,7 @@ table.dataTable tbody td {
                    
                     
                     <!-- szad -->
-                    <div class="card mt-4">
+                    <div class="card mt-1">
                      
                          <div class="card-header d-flex">
                             <div class="feed-header-title">
@@ -375,7 +388,7 @@ table.dataTable tbody td {
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="row mb-4 justify-content-between">
+                            <div class="row mb-0 justify-content-between">
                                 <div class="col-auto">
                                   <img src="images/pdf (1).png" alt="" data-toggle="tooltip" data-placement="top" title=" Download pdf " >
                                      
@@ -386,7 +399,7 @@ table.dataTable tbody td {
                                 </div> -->
                             </div>
                             
-                            <div class="table-overflow">
+                            <div class="table-overflow fixTableHead">
                                  <table id="student-table1" class="table student-table table-bordered table-responsive-sm table-striped  table-hover" style="table-layout: fixed;"  width="100%">
                                     <thead class="bg-default">
                                         <tr>
@@ -401,7 +414,7 @@ table.dataTable tbody td {
                                             <th class="text-center">Id</th>
                                              <th class="text-center" width="20%">Email</th>
                                             <th class="text-center">Attendance</th>
-                                            <th class="text-nowrap text-center" width="17%">Account Access </th>
+                                            <th class="text-nowrap text-center" width="18%">Account Access </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -432,6 +445,331 @@ table.dataTable tbody td {
 <button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
                                             </td>
                                         </tr>
+                                         <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>  <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-left">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <div class="image_container">
+                                                            <span class="user-status online"></span>
+                                                            <div class="image_inner_container">
+                                                                <img src="images/user/icon-user-default.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="text-left">Vamshi raghava</td>
+                                            <td class="text-left">uthamaraj</td>
+                                            <td class="text-center">12345</td>
+                                             <td class="text-center">psinthoju@gmail.com  </td>
+                                             <td class="text-center">100 %</td>
+                                            <td class="text-nowrap text-center">  
+
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat with student"> <i class="fas fa-comment-dots fa-lg text-info "></i></button>                         
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="User"> <i class="far fa-user-circle fa-lg avatar-title text-primary  "></i></button>                                       
+<button class="btn btn-link"  data-toggle="tooltip" data-placement="top" title="" data-original-title="View"> <i class="fe-eye  fa-lg  text-success"></i></button>
+<button class="btn btn-link" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"> <i class="fe-trash-2 fa-lg  avatar-title text-danger"></i></button>
+                                            </td>
+                                        </tr>
+
                                           <tr>
                                             <td class="text-left">
                                                 <div class="form-check form-check-inline">
