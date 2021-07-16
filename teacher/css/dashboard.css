@@ -155,7 +155,7 @@
 
 .sidebar-fixed {
     position: fixed;
-    top: 173px;
+    top: 175px;
     bottom: 0;
     z-index: 1026;
 }
@@ -280,6 +280,8 @@ margin-top:10px;
 /* sidebar-minimized */
 
 @media (min-width: 991.99px) {
+    
+
     .sidebar-minimized {
         /* z-index: 1031; */
         width: 56px;
@@ -323,6 +325,12 @@ margin-top:10px;
 }
 
 @media (max-width: 991.98px) {
+   /* .sidebar-fixed {
+    position: fixed;
+    top: 23%;
+    bottom: 0;
+    z-index: 1026;
+}*/
     .left-side-menu+.content {
         margin-left: 50px;
         
@@ -470,6 +478,12 @@ margin-top:10px;
 }
 
 @media (max-width: 991.98px) {
+     /*.sidebar-fixed {
+    position: fixed;
+    top: 23%;
+    bottom: 0;
+    z-index: 1026;
+}*/
     .content-page {
         margin-left: 0;
     }
