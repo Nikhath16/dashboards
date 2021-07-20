@@ -1,3 +1,14 @@
+
+#sidebar-menu {
+    min-height: calc(100vh - 98px);
+    position: relative;
+    overflow-y: hidden;
+}
+#sidebar-menu:hover {
+    min-height: calc(100vh - 98px);
+    position: relative;
+  overflow-y: scroll;
+}
 .wrapper {
     height: 100%;
     /* overflow: hidden; */
@@ -15,6 +26,9 @@
 
 .content {
     padding: 30px 30px;
+}
+.content-1 {
+    padding: 0px 0px;
 }
 
 .container-fluid {
@@ -197,10 +211,10 @@
     transform: rotate(180deg);
 }
 
-#sidebar-menu {
+/*#sidebar-menu {
 	min-height:calc(100vh - 131px);
 	position: relative;
-}
+}*/
 #sidebar-menu>ul>li ul {
     padding-left: 34px;
     list-style: none;
@@ -1464,9 +1478,9 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 
 .accordion-title {
     margin-bottom: 15px;
-    background-color: rgba(142, 198, 63, 0.8);
+    /*background-color: rgba(142, 198, 63, 0.8);*/
     padding: 0.75rem 1.25rem;
-    color: #fff;
+   /* color: #fff;*/
     cursor: pointer;
 }
 
