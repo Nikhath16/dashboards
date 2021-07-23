@@ -550,7 +550,24 @@ margin-top:10px;
 
 /* Cutomize*/
 
-
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .275rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 /*primary button*/
 
 .btn-primary {
@@ -902,7 +919,7 @@ a.text-dark:focus {
 /*card header and footer*/
 
 .card-header {
-    padding: 0.75rem 1.25rem;
+    padding: 5px;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -1520,9 +1537,11 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }
 
 .card-title {
-    color: #fd804a;
+    /*color: #fd804a;*/
     font-size: 20px;
     font-weight: 600;
+    padding-left: 3px;
+    
 }
 
 .table .fas {
@@ -1587,8 +1606,8 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }
 
 .image_inner_container {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid #fff;
