@@ -80,7 +80,7 @@ button.dt-button, div.dt-button, a.dt-button {
 /* left-side-menu */
 
 .left-side-menu {
-    width: 200px;
+    width: 210px;
     background: #fff;
     bottom: 0;
     padding: 20px 0;
@@ -93,13 +93,13 @@ button.dt-button, div.dt-button, a.dt-button {
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 0 0 200px;
-    flex: 0 0 200px;
+    -ms-flex: 0 0 210px;
+    flex: 0 0 210px;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-order: -1;
     order: -1;
-    width: 200px;
+    width: 210px;
     padding: 0;
     transition: box-shadow .3s .15s, margin-left .3s, margin-right .3s, width .3s, z-index 0s ease .3s, -webkit-transform .3s;
     transition: box-shadow .3s .15s, transform .3s, margin-left .3s, margin-right .3s, width .3s, z-index 0s ease .3s;
@@ -201,7 +201,7 @@ button.dt-button, div.dt-button, a.dt-button {
 }
 
 .left-side-menu+.content {
-    margin-left: 200px;
+    margin-left: 210px;
 }
 
 .sidebar-minimized+.content {
