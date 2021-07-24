@@ -1,4 +1,30 @@
-
+button.dt-button, div.dt-button, a.dt-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 0.333em;
+    /* padding: 0.5em 1em; */
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.88em;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: white;
+    background-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+    background-image: -moz-linear-gradient(top, #fff 0%, #e9e9e9 100%);
+    background-image: -ms-linear-gradient(top, #fff 0%, #e9e9e9 100%);
+    background-image: -o-linear-gradient(top, #fff 0%, #e9e9e9 100%);
+    /* background-image: linear-gradient(to bottom, #fff 0%, #e9e9e9 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#e9e9e9');
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+}
 #sidebar-menu {
     min-height: calc(100vh - 98px);
     position: relative;
@@ -25,7 +51,7 @@
 }
 
 .content {
-    padding: 30px 30px;
+    padding: 20px 20px;
 }
 .content-1 {
     padding: 0px 0px;
@@ -54,7 +80,7 @@
 /* left-side-menu */
 
 .left-side-menu {
-    width: 240px;
+    width: 200px;
     background: #fff;
     bottom: 0;
     padding: 20px 0;
@@ -67,13 +93,13 @@
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 0 0 256px;
-    flex: 0 0 256px;
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-order: -1;
     order: -1;
-    width: 256px;
+    width: 200px;
     padding: 0;
     transition: box-shadow .3s .15s, margin-left .3s, margin-right .3s, width .3s, z-index 0s ease .3s, -webkit-transform .3s;
     transition: box-shadow .3s .15s, transform .3s, margin-left .3s, margin-right .3s, width .3s, z-index 0s ease .3s;
@@ -169,13 +195,13 @@
 
 .sidebar-fixed {
     position: fixed;
-    top: 175px;
+    top: 169px;
     bottom: 0;
     z-index: 1026;
 }
 
 .left-side-menu+.content {
-    margin-left: 255px;
+    margin-left: 200px;
 }
 
 .sidebar-minimized+.content {
@@ -1540,7 +1566,7 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
     /*color: #fd804a;*/
     font-size: 20px;
     font-weight: 600;
-    padding-left: 3px;
+    padding-left: 5px;
     
 }
 
@@ -1551,12 +1577,13 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 .header-bottom .nav-link {
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .header-bottom .dropdown-item {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgba(0, 0, 0, .5);
 }
 
