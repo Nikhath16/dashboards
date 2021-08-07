@@ -1,3 +1,9 @@
+.modal-header .text-primary {
+    margin-bottom: 0;
+    /* line-height: 1.5; */
+    font-weight: 600;
+    color: #545454 !important;
+}
 button.dt-button, div.dt-button, a.dt-button {
     position: relative;
     display: inline-block;
@@ -578,7 +584,7 @@ margin-top:10px;
 
 .btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 200;
     color: #212529;
     text-align: center;
     vertical-align: middle;
@@ -1701,7 +1707,7 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 }
 
 .modal-title {
-    color: #fd804a;
+    color: #545454 !important;
     font-weight: 600;
 }
 
