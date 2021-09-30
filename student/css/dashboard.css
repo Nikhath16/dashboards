@@ -1481,14 +1481,14 @@ html:not([dir=rtl]) .c-switch-label .c-switch-slider::after {
 
 .accordion-title {
     margin-bottom: 15px;
-    background-color: rgba(142, 198, 63, 0.8);
+    background-color: #fff;
     padding: 0.75rem 1.25rem;
-    color: #fff;
+    color: #545252;
     cursor: pointer;
 }
 
 .accordion-title .mdi.mdi-chevron-down {
-    float: right;
+    float: left;
     transition: .15s ease-out;
 }
 
@@ -1780,7 +1780,7 @@ label {
 }
 .activity-feed {
     padding: 15px;
-
+padding-left: 33px;
 }
 
 
