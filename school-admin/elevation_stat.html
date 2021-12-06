@@ -102,7 +102,7 @@
                             <span> Evaluation policy </span>
                         </a>
                     </li>
-                      <li>
+                     <li>
                                 <a href="#sidebarEcommerce" class="active"  data-toggle="collapse">
                                     <i class="fa fa-chart-bar"></i>
                                     <span> Reports </span>
@@ -116,7 +116,7 @@
                                             <a href="engagemenr_snap.html" >Engagement Records</a>
                                         </li>
                                         <li>
-                                            <a href="Elevation_stat.html"  >Evaluation Stats</a>
+                                            <a href="Elevation_stat.html" class="active"  >Evaluation Stats</a>
                                         </li>
                                          <li class="active">
                                             <a href="academic_performance_snapshot.html">Performance Stats</a>
@@ -125,7 +125,7 @@
                                             <a href="attendance_report.html"   >Attendance Record</a>
                                         </li>
                                        <li >
-                                            <a href="Report_card.html" class="active" > Report Card</a>
+                                            <a href="Report_card.html"  > Report Card</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -325,18 +325,17 @@
 
                         <div class="card-header d-flex">
                             <div class="feed-header-title">
-                                <h5 class="text-primary">Test and Assignments<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+                                <h5 class="text-primary">Test And Assignments Administration By School<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
 
                             </div>
                           
 
                         </div>
                         <div class="card-body">
-                            <h1>page under design</h1>
-                             <div class="row">
+                               <div class="row">
              
               <div class="col-md-4 row  text-right mb-4">
-                <span>  <h6 class="text-primary"> Select Institutions:</h6></span>&nbsp;&nbsp;&nbsp;
+                <span>  <h6 class="text-primary"> Select Institution:</h6></span>&nbsp;&nbsp;&nbsp;
                 <select class="form-select" aria-label="Default select example">
   <option selected>  </option>
   <option value="1">Institution Institution 1 2</option>
@@ -345,87 +344,58 @@
 </select>
 </div>
 <div class="col-md-4 row text-center mb-4">
-<span>  <h6 class="text-primary">Select Class:</h6></span>&nbsp;&nbsp;&nbsp;
+<span>  <h6 class="text-primary">Select Subject:</h6></span>&nbsp;&nbsp;&nbsp;
                 <select class="form-select" aria-label="Default select example">
   <option selected>  </option>
-  <option value="1"> Select </option>
+  <option value="1"> Subject Subject 1 2</option>
   <option value="2"> 3</option>
   <option value="3">4</option>
 </select>
 </div>
 <div class="col-md-4 row text-center mb-4">
-<span>  <h6 class="text-primary">Select Student:</h6></span>&nbsp;&nbsp;&nbsp;
-                <select class="form-select" aria-label="Default select example">
-  <option selected>  </option>
-  <option value="1"> Institution gfdg dfgfdg fgf  1 2</option>
-  <option value="2"> 3</option>
-  <option value="3">4</option>
-</select>
+
 </div>
                      </div> 
               <div class="row">
-                
-                         <div class="col-md-8  text-left ">
-
-                       <table border="1" cellpadding="10">
-    <tr>
-        <td>CELL</td>
-        <td colspan="15"></td>
-        <td>CELL</td>
-        <td>CELL</td>
-    </tr>
-    <tr>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td colspan="9"></td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-    </tr>
-    <tr>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td colspan="9"></td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-    </tr>
-    <tr>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-        <td>CELL</td>
-    </tr>
-    
-   
-    
-</table>
+                         <div class="col-md-2  text-right mb-5">
+                            
                          </div>
-                              <div class="col-md-4 row text-center mt-5">
+                              <div class="col-md-8 row text-center mb-5">
                                
-            
+              <canvas id="myChart3"></canvas>
+  <script type="">
+    let labels4 = ['Number of test deployed', 'Number of test taken', 'Number of assignment Submitted', 'Number of questions answered', 'Number Of tests overdue completion', 'Number of assignments overdue submission' ];
+    let data4 = [6, 40, 25, 70, 21, 45,];
+    let colors4 = ['#49A9EA', '#36CAAB']
+    let myChart3 = document.getElementById('myChart3').getContext('2d');
+    let Chart4 = new Chart(myChart3, {
+      type: 'bar',
+       options: {
+        indexAxis: 'y',
+        plugins: {
+            legend: {
+                display: false,
+                labels: {
+                    color: 'rgb(255, 99, 132)'
+                }
+            },
+
+        },
+
+      
+    },
+      data: {
+        labels: labels4,
+        datasets: [{
+          
+          data: data4,
+          backgroundColor: colors4
+        }]
+      },
+      
+      
+    });
+  </script>
             </div>
               <div class="col-md-2  text-center mb-5"></div>
           </div>

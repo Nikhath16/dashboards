@@ -52,7 +52,7 @@
 <body class="app-body">
     <div class="wrapper">
         <!-- sidebar -->
-        <div id="sidebar" class="left-side-menu sidebar-fixed">
+         <div id="sidebar" class="left-side-menu sidebar-fixed">
             <div class="logo-box">
                 <a href="index.html" class="logo text-center">
                     <span class="logo-lg">
@@ -87,7 +87,7 @@
                     <li class="">
                         <a href="grade.html" aria-expanded="false">
                             <i class="fas fa-chalkboard-teacher"></i>
-                            <span> Grades </span>
+                            <span> K-12 Standards </span>
                         </a>
                     </li>
 
@@ -131,11 +131,10 @@
                     <li>
                         <a href="gradebook.html" aria-expanded="false">
                             <i class="fe-sidebar"></i>
-                            <span> Gradebook </span>
+                            <span> Evaluation policy </span>
                         </a>
-                    </li>
-                   <li>
-                                <a href="#sidebarEcommerce" data-toggle="collapse">
+                    </li>                   <li>
+                                <a href="#sidebarEcommerce" class="active"  data-toggle="collapse">
                                     <i class="fa fa-chart-bar"></i>
                                     <span> Reports </span>
                                   <span class="menu-arrow ">
@@ -145,12 +144,20 @@
                                 <div class="collapse" id="sidebarEcommerce">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="reports2.html">Reports1</a>
+                                            <a href="engagemenr_snap.html" class="active">Engagement Records</a>
                                         </li>
                                         <li>
-                                            <a href="reports3.html">Reports2</a>
+                                            <a href="Elevation_stat.html"  >Evaluation Stats</a>
                                         </li>
-                                       
+                                         <li class="active">
+                                            <a href="academic_performance_snapshot.html">Performance Stats</a>
+                                        </li>
+                                        <li >
+                                            <a href="attendance_report.html"   >Attendance Record</a>
+                                        </li>
+                                       <li >
+                                            <a href="Report_card.html"  > Report Card</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -356,6 +363,30 @@
 
                         </div>
                         <div class="card-body">
+                             <div class="row">
+             
+              <div class="col-md-4 row  text-right mb-4">
+                <span>  <h6 class="text-primary"> Select Institution:</h6></span>&nbsp;&nbsp;&nbsp;
+                <select class="form-select" aria-label="Default select example">
+  <option selected>  </option>
+  <option value="1">Institution Institution 1 2</option>
+  <option value="2"> 3</option>
+  <option value="3">4</option>
+</select>
+</div>
+<div class="col-md-4 row text-center mb-4">
+<span>  <h6 class="text-primary">Select Subject:</h6></span>&nbsp;&nbsp;&nbsp;
+                <select class="form-select" aria-label="Default select example">
+  <option selected>  </option>
+  <option value="1"> Subject Subject 1 2</option>
+  <option value="2"> 3</option>
+  <option value="3">4</option>
+</select>
+</div>
+<div class="col-md-4 row text-center mb-4">
+
+</div>
+                     </div> 
                   <div id="columnchart_material" style="height: 370px; width: 70%;"></div>
 
                         </div>
