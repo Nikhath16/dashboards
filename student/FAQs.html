@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/icons.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
+
+
+
+</head>
+<style type="text/css">
+    .accordion-title {
+    margin-bottom: 15px;
+    background-color: rgba(142, 198, 63, 0.8);
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.accordion-title .mdi.mdi-chevron-down {
+    float: right;
+    transition: .15s ease-out;
+}
+.accordion-title[aria-expanded="true"] .mdi.mdi-chevron-down { transform: rotate(180deg);}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1029;
+    display: none;
+}
+    .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+/*.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}*/
+.hr-line{
+  width: 80%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 20px 15px 20px 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 75%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.faq-active,
+.faq-page:hover {
+    background-color: #f5fcea;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.faq-active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+</style>
+
+<body class="app-body">
+    <div class="wrapper">
+
+        <div class="content-page">
+            <!-- header -->
+            <header class="header header-fixed navbar-custom">
+                <div class="container-fluid">
+                    <div class="header-top">
+                        <div class="header-school-logo">
+                            <span class="school-logo"><img src="images/forsyth-default-logo.png" alt=""></span>
+                            <span class="school-name">Forsyth County Schools</span>
+                        </div>
+
+                       <ul class="list-unstyled topnav-menu  mb-0 ml-auto">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-bell" href="#" id="dropdownbellnotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">4</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right bell-dropdown" aria-labelledby="dropdownbellnotification">
+                                    <!-- item-->
+                                    <div class="dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Notifications </h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 1 fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                              <div class="dropdown-divider"></div>
+                                              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                       <!--  <i class="fe-user"></i> -->
+                                        <span>Notification 2 gfgfg fgfgfgdfg fgfdgdfg gfdf</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user p-0" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Teacher:</span>
+                                    <img src="images/user-1.jpg" alt="user-image" class="rounded-circle">
+                                     
+                                    <span class="pro-user-name ml-1">
+
+                                        Geneva <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <!-- item-->
+                                  
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>My Account</span>
+                                    </a>
+
+                                
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand Learnyve-logo" href="#">
+                            <img src="images/Learnyve_logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html">COURSE</a>
+                                </li>
+
+                                 <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        GRADE & SCORE 
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">My Scores</a>
+                                        <a class="dropdown-item" href="hours-spent.html">Hours I Spent</a>
+                                        <a class="dropdown-item" href="#">Skills Mastered</a>
+                                        <a class="dropdown-item" href="#">Badges Earned</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="test-assignments.html">TEST & ASSIGNMENT  </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        RESOURCES  
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">CALENDAR</a>
+                                        <a class="dropdown-item" href="#">ASSIGNED RESOURCES </a>
+                                        <a class="dropdown-item" href="#">STANDERD RESOURCES</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        DRIVES & APPS   
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">SCORE</a>
+                                        <a class="dropdown-item" href="#">ENGAEMENT</a>
+                                        <a class="dropdown-item" href="#">SKILLS MATERY</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        PRACTICE   
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">GOOGLE DRIVE</a>
+                                        <a class="dropdown-item" href="#">GOOGLE CLASSROOM</a>
+                                        <a class="dropdown-item" href="#">EXT LEARNING APPS</a>
+                                        <a class="dropdown-item" href="#">CHAT</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        VIR SESSION    
+                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">EMAIL/ MESSAGE</a>
+                                        <a class="dropdown-item" href="#">DISCUSSION FORUM</a>
+                                        <a class="dropdown-item" href="#">NOTICE</a>
+                                        <a class="dropdown-item" href="#">VIDEO SESSION</a>
+                                </li>
+ <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">FAQs</a>
+                                </li>
+                            </ul>
+                            </div>
+                    </nav>
+                    </div>
+
+            </header>
+            <div class="page-top text-dark" >
+            <div class="container-fluid">
+             <div class=" d-flex mb-2">
+                                 
+                <span> <b>Class :</b> PHYSICS / Fiber Optics class</span>
+                <div class="dropdown dropdown">  <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;  <i class="fe-refresh-ccw " aria-hidden="true"> </i>  </a>  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">  <li class="dropdown-item"> Course 1</li>  <li class="dropdown-item">Course 2</li>  <li class="dropdown-item">Course 3</li>  </ul>  </div>
+<div class="ml-auto" ><b>  Teacher:</b> frth
+</div>
+                        </div>
+             
+            </div>
+        </div>
+            <!-- header end -->
+            <div class="main">
+
+                <div class="container content">
+                    <div class="card">
+                       
+                        <div class="card-body">
+
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h4 class="faq-page"> FAQ 1- Lorem ipsum dolor,</h4>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h4 class="faq-page"> FAQ 2- Lorem ipsum dolor,</h4>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h4 class="faq-page"> FAQ 3- Lorem ipsum dolor,</h4>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+        </section>
+    
+                            
+                           
+                            
+                                </div>
+                        </div>
+                        <div class="card">
+                            <div class="accordion" id="accordionExample1">
+                        <h5 class="accordion-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                            How to add fractions
+                            <i class="mdi mdi-chevron-down"></i>
+                        </h5>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1" style="background: white">
+
+                            <div class="p-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+                        </div>
+                    </div>
+                     <div class="accordion" id="accordionExample2">
+                        <h5 class="accordion-title" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+
+                          FAQ-1 asadsdd asd
+                            <i class="mdi mdi-chevron-down"></i>
+                        </h5>
+                        <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordionExample2" style="background: white">
+
+                            <div class="p-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+                        </div>
+                    </div>
+                     <div class="accordion" id="accordionExample3">
+                        <h5 class="accordion-title" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+
+                            Faq-2
+                            <i class="mdi mdi-chevron-down"></i>
+                        </h5>
+                        <div id="collapsethree" class="collapse show" aria-labelledby="headingthree" data-parent="#accordionExample3" style="background: white">
+
+                            <div class="p-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+ 
+                   
+                       
+
+                </div>
+            </div>
+
+            </div>
+            </div>
+<script >
+    var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("faq-active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
+            <footer>
+                <div id="overlay"></div>
+            </footer>
+            <script src='js/jquery.min.js'></script>
+            <script src='js/bootstrap.bundle.min.js'></script>
+            <script src="js/popper.min.js"></script>
+            <script src='js/bootstrap.min.js'></script>
+            <script src='js/app.js'></script>
+            <script src='js/script.js'></script>
+
+</body>
+
+</html>
