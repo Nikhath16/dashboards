@@ -114,7 +114,7 @@ table.dataTable tbody td {
                                 <li class="nav-item">
                                     <a class="nav-link" href="allstudents.html">Students</a>
                                 </li>
-                                <li class="nav-item dropdown active">
+                                <li class="nav-item dropdown ">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tests
                             </a>
@@ -144,7 +144,9 @@ table.dataTable tbody td {
                                   <li class="nav-item">
                                     <a class="nav-link" href="badges.html">Badges</a>
                                 </li>
-
+ <li class="nav-item active">
+                                    <a class="nav-link" href="badges.html">MY FAQs</a>
+                                </li>
                             </ul>
                             </div>
                     </nav>
@@ -156,7 +158,7 @@ table.dataTable tbody td {
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-primary" id="staticBackdropLabel">Add Question Category </h5>
+                            <h5 class="modal-title text-primary" id="staticBackdropLabel">Add Frequently Asked Question </h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -165,31 +167,32 @@ table.dataTable tbody td {
                             <form class="form-horizontal" action="" method="post">
                            
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Question Title:</label>
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Faq Query:</label>
                                     <div class="col-md-9">
                                       <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Question Key:</label>
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email"> Faq Category:</label>
                                     <div class="col-md-9">
-                                      <input class="form-control" id="text-input" type="text" name="text-input" placeholder="">
-                                    </div>
-                                </div>
-                                
-           
-             <div class="form-group row">
-                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email"> Difficulty Level:</label>
-                                    <div class="col-md-9">
-                                <select class="form-control ">
-               <option>Select difficulty Level</option> 
-               <option> Afghanistan</option> 
-               <option>Argentina</option> 
+                                <select class="form-control " >
+               <option>Select Category</option> 
+               <option>Category-1 </option> 
+               <option>Category-2</option> 
                
                
             </select>
             </div>
             </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label text-muted  font-weight-bold" for="hf-email">Response:</label>
+                                    <div class="col-md-9">
+                                       <textarea class="form-control" placeholder="Faq Response" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                
+           
+            
                         
                                
                                  
@@ -213,16 +216,16 @@ table.dataTable tbody td {
                     <div class="card">
                         <div class="card-header d-flex">
                             <div class="feed-header-title">
-                                <h5 class="text-primary">My Resources<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+                                <h5 class="text-primary">My FAQs<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
 
                             </div>
                          
-<!-- <div class="ml-auto" data-toggle="tooltip" data-placement="top" title=" Add Question Category ">
+<div class="ml-auto" data-toggle="tooltip" data-placement="top" title="Add Frequently Asked Question">
 
 
-                           <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#add"><i class="fas fa-plus mr-1"></i>Add test</button>
+                           <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#add"><i class="fas fa-plus mr-1"></i>Add Query</button>
 
-                            </div> -->
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-overflow">
@@ -231,115 +234,107 @@ table.dataTable tbody td {
                                     <thead class="bg-default">
                                         <tr style="position: sticky;">
                                              
-                                            <th class="text-left">Name</th>
-                                             <th class="text-center">Type</th>
-                                            <th class="text-center">Class </th>
+                                            <th class="text-left">FAQ Query</th>
+                                             <th class="text-center">Category </th>
+                                            <th class="text-center">Response </th>
                                             <th class="text-center">Date Added </th>
-                                             <th class="text-center">Rating</th>
-                                              <th class="text-center">Comments</th>
-                                            <th class="text-center">Querries</th>
+                                             <th class="text-center">#searched</th>
+                                              
+                                             <th class="text-center"></th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             
-                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling </td>
-                                          <td class="text-center">Video</td>
-                                           <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">How Can i add fractions?</td>
+                                          <td class="text-center">Category 4</td>
+                                   <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">To add fractions there are Three Simple Steps:
+Step 1: Make sure the bottom numbers (the denominators) are the same
+Step 2: Add the top numbers (the numerators), put that answer over the denominator
+Step 3: Simplify the fraction (if possible)</td>
                                             <td class="text-center">23/7/2021 </td>
                                             
                                            
                                             
                                           
-                                       <td class="text-center">
-
-                                                <span class="p-2"><i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color:#FFD700 "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                           </span>
+                                       <td class="text-center">4
+<span class="p-1"><i class="fas fa-eye fa-sm " aria-hidden="true"></i></span>
                                                
                                             </td>
-                                            <td class="text-center">
+                                           <td class="text-center">
 
-                                                <span class="p-2"><i class="fas fa-comment-alt text-secondary"></i>
-                                           </span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-pen fa-lg" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
+                                            </td>
+                                            
+                                        </tr>
+                                       <tr>
+                                            
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">what is the attendance criteria?</td>
+                                          <td class="text-center">Category-1</td>
+                                   <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">Attendance policy is a set of rules related to the attendance of employees. It includes rules related to absenteeism i.e. number of leaves allowed – sick leaves, casual leaves, vacation leaves or other types of leaves authorized by the company.</td>
+                                            <td class="text-center">23/7/2021 </td>
+                                            
+                                           
+                                            
+                                          
+                                       <td class="text-center">4
+<span class="p-1"><i class="fas fa-eye fa-sm " aria-hidden="true"></i></span>
                                                
                                             </td>
-                                            <td class="text-center">
-                                                  <span class="p-2"><a href="L-Querries.html"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a>
-                                           </span>
+                                           <td class="text-center">
 
-
+                                                <span class="p-2"><a href="#"><i class="fas fa-pen fa-lg" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
                                             </td>
+                                            
                                         </tr>
                                         <tr>
                                             
-                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling </td>
-                                          <td class="text-center">Video</td>
-                                           <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">Where do I study LCM?</td>
+                                          <td class="text-center">Category 2</td>
+                                   <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">The formula that shows the relationship between their LCM and HCF is: LCM (a,b) × HCF (a,b) = a × b. For example, let us take two numbers 12 and 8. Let us use the formula: LCM (12,8) × HCF (12,8) = 12 × 8. The LCM of 12 and 8 is 24; and the HCF of 12 and 8 is 4.</td>
                                             <td class="text-center">23/7/2021 </td>
                                             
                                            
                                             
                                           
-                                       <td class="text-center">
-
-                                                <span class="p-2"><i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color:#FFD700 "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                           </span>
+                                       <td class="text-center">4
+<span class="p-1"><i class="fas fa-eye fa-sm " aria-hidden="true"></i></span>
                                                
                                             </td>
-                                            <td class="text-center">
+                                           <td class="text-center">
 
-                                                <span class="p-2"><i class="fas fa-comment-alt text-secondary"></i>
-                                           </span>
-                                               
+                                                <span class="p-2"><a href="#"><i class="fas fa-pen fa-lg" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
                                             </td>
-                                            <td class="text-center">
-                                                  <span class="p-2"><a href="L-Querries.html"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a>
-                                           </span>
-
-
-                                            </td>
+                                            
                                         </tr>
                                         <tr>
                                             
-                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling Question TD_Question dfgdfg f fh fgghfgh fgh h fghfg category-5 Rank Order Scaling </td>
-                                          <td class="text-center">Video</td>
-                                           <td class="text-center"><a href="">5</a></td>
+                                            <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">How do i watch Coding Video?</td>
+                                          <td class="text-center">Category 3</td>
+                                   <td class="text-left" data-toggle="tooltip" data-placement="top" title="  ">You can learn programming concepts by doing tutorials, but you'll never really learn to program until you build something on your own. Tutorials are great for getting a feel for whatever language or framework it's covering.</td>
                                             <td class="text-center">23/7/2021 </td>
                                             
                                            
                                             
                                           
-                                       <td class="text-center">
-
-                                                <span class="p-2"><i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: #FFD700"></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color:#FFD700 "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                                <i class="fa fa-star" aria-hidden="true" style="color: "></i>
-                                           </span>
+                                       <td class="text-center">4
+<span class="p-1"><i class="fas fa-eye fa-sm " aria-hidden="true"></i></span>
                                                
                                             </td>
-                                            <td class="text-center">
+                                           <td class="text-center">
 
-                                                <span class="p-2"><i class="fas fa-comment-alt text-secondary"></i>
-                                           </span>
-                                               
+                                                <span class="p-2"><a href="#"><i class="fas fa-pen fa-lg" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-eye fa-lg text-success" aria-hidden="true"></i></a></span>
+                                                <span class="p-2"><a href="#"><i class="fas fa-trash-alt text-danger" aria-hidden="true"></i></a></span>
                                             </td>
-                                            <td class="text-center">
-                                                  <span class="p-2"><a href="Querries.html"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a>
-                                           </span>
-
-
-                                            </td>
+                                            
                                         </tr>
                                        
 

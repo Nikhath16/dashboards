@@ -11,6 +11,11 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/dashboard.css'>
 <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css" />
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
 
 
 </head>
@@ -194,6 +199,7 @@
                     </div>
                    <!--  modal end -->
             <!-- header end -->
+       
             <div class="main">
                 <div class="content">
 
@@ -202,7 +208,7 @@
                      
                          <div class="card-header d-flex">
                             <div class="feed-header-title">
-                                <h5 class="text-primary">Students<i class="fe-info text-secondary ml-1" data-toggle="popover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
+                                <h5 class="text-primary">Students<i class="fe-info text-secondary ml-1" data-toggle="popover" data-trigger="hover" data-placement="Right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i></h5>
 
                             </div>
                             <div class="ml-auto" >
@@ -425,10 +431,20 @@
 
             </div>
         </div>
+        <script >
+            // Treeview Initialization
+$(document).ready(function() {
+  $('.treeview').mdbTreeview();
+});
+        </script>
 
         <footer>
             <div id="overlay"></div>
         </footer>
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
         <script src='js/jquery.min.js'></script>
         <script src='js/bootstrap.bundle.min.js'></script>
         <script src="js/popper.min.js"></script>
